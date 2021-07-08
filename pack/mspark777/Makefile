@@ -14,7 +14,7 @@ install: clean
 	# It must be installed at last.                                                   
 	curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz|tar xzfv -
 	mv coc.nvim-release start/                                               
-	vim -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-go coc-docker coc-pyright coc-svelte|qa!'
+	#vim -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-go coc-docker coc-pyright|qa!'
 
 clean:
 	rm -rf start
