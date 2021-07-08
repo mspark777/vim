@@ -1,0 +1,5 @@
+/pack/mspark777/*
+/ls/erlang/*
+
+!/pack/mspark777/Makefile
+!/ls/erlang/Makefile

@@ -1,0 +1,15 @@
+{
+  "eslint.autoFixOnSave": true,
+  "tsserver.enableJavascript": false,
+  "go.goplsOptions": {
+    "completeUnimported": true
+  },
+  "coc.preferences.formatOnSaveFiletypes": [
+    "go",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "python"
+  ]
+}
