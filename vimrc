@@ -70,7 +70,7 @@ packadd python-syntax
 packadd rust.vim
 let g:rustfmt_autosave = 1
 
-packadd coc.nvim-release
+packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
