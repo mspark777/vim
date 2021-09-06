@@ -1,12 +1,4 @@
 {
   "eslint.autoFixOnSave": true,
-  "tsserver.enableJavascript": false,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "go",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "python"
-  ]
+  "tsserver.enableJavascript": false
 }
