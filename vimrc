@@ -66,6 +66,9 @@ let g:javascript_plugin_jsdoc = 1
 "" required python
 packadd python-syntax
 
+packadd blamer.nvim
+let g:blamer_enabled = 1
+
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
