@@ -43,31 +43,41 @@ command Safari !open -a 'safari' %
 syntax on
 filetype plugin indent on
 
-packadd gruvbox
-colorscheme gruvbox
-:set bg=dark
+"" colorscheme
+packadd vim-code-dark
+colorscheme codedark
 
-packadd nerdtree-git-plugin
-packadd nerdtree
+"" statusline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'codedark'
+let g:airline#extensions#tabline#formatter = 'default'
+packadd vim-airline
+packadd vim-airline-themes
+
+"" nerdtree
 let NERDTreeIgnore = [".DS_Store", ".git$", ".vscode", ".pyc"]
 let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+packadd nerdtree-git-plugin
+packadd nerdtree
 
-"" required nodejs
-packadd typescript-vim
-packadd vim-jsx-pretty
+"" typescript
 let g:vim_jsx_pretty_colorful_config = 1
 let g:vim_jsx_pretty_highlight_close_tag =1
+packadd typescript-vim
+packadd vim-jsx-pretty
 
-packadd vim-javascript
+"" javascript
 let g:javascript_plugin_jsdoc = 1
+packadd vim-javascript
 
-"" required python
+"" python
 packadd python-syntax
 
-packadd blamer.nvim
+"" gitlens
 let g:blamer_enabled = 1
+packadd blamer.nvim
 
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
