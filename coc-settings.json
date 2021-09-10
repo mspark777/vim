@@ -1,4 +1,4 @@
 {
   "eslint.autoFixOnSave": true,
-  "tsserver.enableJavascript": false
+  "tsserver.enableJavascript": true
 }
