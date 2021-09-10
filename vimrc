@@ -78,6 +78,7 @@ packadd python-syntax
 
 "" gitlens
 let g:blamer_enabled = 1
+let g:blamer_show_in_insert_modes = 0
 packadd blamer.nvim
 
 packadd coc.nvim
