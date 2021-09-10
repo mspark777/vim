@@ -30,6 +30,8 @@ set term=xterm-256color
 set updatetime=300
 set signcolumn=yes
 set autoread
+set list
+set listchars=tab:•\ ,trail:•,extends:»,precedes:«
 
 
 command Gitg !git lg1
