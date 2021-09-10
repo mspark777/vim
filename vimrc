@@ -48,9 +48,10 @@ packadd vim-code-dark
 colorscheme codedark
 
 "" statusline
-let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'codedark'
-let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+packadd vim-fugitive
 packadd vim-airline
 packadd vim-airline-themes
 
