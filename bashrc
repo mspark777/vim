@@ -1,8 +1,7 @@
 function lvim {
-  local LOCAL_FILE="$(pwd)/.vimrc"
-  if [ -f "${LOCAL_FILE}" ]
+  if [ -f '.vimrc' ]
   then
-    vim -u "${LOCAL_FILE}"
+    vim -c 'source .vimrc'
   else
     vim
   fi
