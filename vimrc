@@ -56,6 +56,8 @@ let g:airline#extensions#tabline#enabled = 1
 packadd vim-fugitive
 packadd vim-airline
 packadd vim-airline-themes
+nnoremap <silent> g] :bnext!<Enter>
+nnoremap <silent> g[ :bprevious!<Enter>
 
 "" nerdtree
 let NERDTreeIgnore = [".DS_Store", ".git$", ".vscode", ".pyc"]
