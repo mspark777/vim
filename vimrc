@@ -62,10 +62,10 @@ nnoremap <silent> g[ :bprevious!<Enter>
 "" nerdtree
 let NERDTreeIgnore = [".DS_Store", ".git$", ".vscode", ".pyc"]
 let NERDTreeShowHidden=1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
 packadd nerdtree-git-plugin
 packadd nerdtree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
 
 "" typescript
 let g:vim_jsx_pretty_colorful_config = 1
@@ -84,6 +84,12 @@ packadd python-syntax
 let g:blamer_enabled = 1
 let g:blamer_show_in_insert_modes = 0
 packadd blamer.nvim
+
+
+""rust
+let g:rustfmt_autosave = 1
+packadd rust.vim
+
 
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
