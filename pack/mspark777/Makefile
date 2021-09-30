@@ -13,6 +13,8 @@ install: clean
 	git clone --depth=1 https://github.com/vim-python/python-syntax.git start/python-syntax
 	git clone --depth=1 https://github.com/APZelos/blamer.nvim.git start/blamer.nvim
 	git clone --depth=1 https://github.com/rust-lang/rust.vim.git start/rust.vim
+	git clone --depth=1 git://github.com/shime/vim-livedown.git start/vim-livedown
+
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
 	vim -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-pyright coc-clangd coc-swagger coc-svg coc-rust-analyzer coc-deno|qa!'

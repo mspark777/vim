@@ -90,6 +90,10 @@ packadd blamer.nvim
 let g:rustfmt_autosave = 1
 packadd rust.vim
 
+let g:livedown_browser = "chrome"
+packadd vim-livedown
+nmap <silent> gm :LivedownToggle<CR>
+
 
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
