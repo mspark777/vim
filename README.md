@@ -28,5 +28,5 @@ My vim8 configure. (macOS (Catalina 10.15.7 +, Big Sur), Ubuntu 20.04 +)
 git config --global user.name 'minsoo.park'
 git config --global user.email 'topangel777@gmail.com'
 git config --global core.editor vim
-git config --glboal push.default simple
+git config --global push.default simple
 ```
