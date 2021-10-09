@@ -11,7 +11,7 @@ install: clean
 	git clone --depth=1 https://github.com/leafgarland/typescript-vim.git start/typescript-vim
 	git clone --depth=1 https://github.com/MaxMEllon/vim-jsx-pretty.git start/vim-jsx-pretty
 	git clone --depth=1 https://github.com/vim-python/python-syntax.git start/python-syntax
-	git clone --depth=1 https://github.com/APZelos/blamer.nvim.git start/blamer.nvim
+	git clone --depth=1 git@github.com:zivyangll/git-blame.vim.git start/git-blame.vim
 	git clone --depth=1 https://github.com/rust-lang/rust.vim.git start/rust.vim
 	git clone --depth=1 git://github.com/shime/vim-livedown.git start/vim-livedown
 

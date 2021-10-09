@@ -80,11 +80,9 @@ packadd vim-javascript
 "" python
 packadd python-syntax
 
-"" gitlens
-let g:blamer_enabled = 1
-let g:blamer_show_in_insert_modes = 0
-packadd blamer.nvim
-
+"" git-blame
+packadd git-blame.vim
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 ""rust
 let g:rustfmt_autosave = 1
