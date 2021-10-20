@@ -17,7 +17,7 @@ install: clean
 
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
-	vim -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-pyright coc-clangd coc-swagger coc-svg coc-rust-analyzer coc-deno|qa!'
+	vim -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-pyright coc-clangd coc-swagger coc-svg coc-rust-analyzer coc-deno coc-phpls|qa!'
 
 clean:
 	rm -rf start
