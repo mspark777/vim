@@ -3,7 +3,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set encoding=utf-8
-set mouse=v
+set mouse=a
 set clipboard^=unnamed,unnamedplus
 set expandtab
 set showmode
