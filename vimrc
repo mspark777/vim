@@ -32,7 +32,6 @@ set signcolumn=yes
 set autoread
 set list
 set listchars=tab:•\ ,trail:•,extends:»,precedes:«
-set shellcmdflag=-ic
 
 
 command Gitg !git lg1
