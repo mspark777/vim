@@ -60,7 +60,7 @@ nnoremap <silent> g] :bnext!<Enter>
 nnoremap <silent> g[ :bprevious!<Enter>
 
 "" nerdtree
-let NERDTreeIgnore = [".DS_Store", ".git$", ".vscode", ".pyc"]
+let NERDTreeIgnore = [".pyc"]
 let NERDTreeShowHidden=1
 packadd nerdtree-git-plugin
 packadd nerdtree
