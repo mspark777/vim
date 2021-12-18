@@ -31,7 +31,7 @@ git config --global core.editor vim
 git config --global push.default simple
 ```
 
-### Remove copy
+### Remote copy
 1. brew install clipper
 2. ssh -R 8377:localhost:8377 ...
 3. $remote: nc -q 0 localhost 8377
