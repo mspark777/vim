@@ -1,6 +1,6 @@
 # vim
 
-My vim8 configure. (macOS (Catalina 10.15.7 +, Big Sur), Ubuntu 20.04 +)
+My vim8 configure.
 
 ## Install
 
