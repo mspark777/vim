@@ -47,6 +47,8 @@ vnoremap <leader>y :w !pbcopy<CR><CR>
 syntax on
 filetype plugin indent on
 
+autocmd Filetype make setlocal noexpandtab
+
 "" colorscheme
 packadd vim-code-dark
 colorscheme codedark
@@ -86,14 +88,13 @@ packadd python-syntax
 packadd git-blame.vim
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
-""rust
+"" rust
 let g:rustfmt_autosave = 1
 packadd rust.vim
 
-let g:livedown_browser = "chrome"
-packadd vim-livedown
-nmap <silent> gm :LivedownToggle<CR>
-
+"" c
+let g:lsp_cxx_hl_use_text_props = 1
+packadd vim-lsp-cxx-highlight
 
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
