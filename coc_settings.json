@@ -1,7 +1,7 @@
 {
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": true,
-  "clangd.semanticHighlighting": true,
   "coc.preferences.formatOnSaveFiletypes": ["c"],
-  "coc.preferences.semanticTokensHighlights": true
+  "coc.preferences.semanticTokensHighlights": true,
+  "clangd.semanticHighlighting": true
 }

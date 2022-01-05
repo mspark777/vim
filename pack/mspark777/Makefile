@@ -14,6 +14,7 @@ install: clean
 	git clone --depth=1 https://github.com/zivyangll/git-blame.vim.git start/git-blame.vim
 	git clone --depth=1 https://github.com/rust-lang/rust.vim.git start/rust.vim
 	git clone --depth=1 https://github.com/jackguo380/vim-lsp-cxx-highlight.git start/vim-lsp-cxx-highlight
+	git clone --depth=1 https://github.com/kevinoid/vim-jsonc.git start/vim-jsonc
 
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim

@@ -96,6 +96,9 @@ packadd rust.vim
 let g:lsp_cxx_hl_use_text_props = 1
 packadd vim-lsp-cxx-highlight
 
+"" json
+packadd vim-jsonc
+
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
