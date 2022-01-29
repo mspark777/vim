@@ -99,6 +99,9 @@ packadd vim-lsp-cxx-highlight
 "" json
 packadd vim-jsonc
 
+"" elixir
+packadd vim-elixir
+
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
