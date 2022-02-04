@@ -1,5 +1,12 @@
 {
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": true,
-  "coc.preferences.formatOnSaveFiletypes": ["c", "elixir"]
+  "coc.preferences.formatOnSaveFiletypes": ["c", "elixir"],
+  "codeLens.enable": true,
+  "languageserver": {
+    "elixirLS": {
+      "command": "/absolute/path/to/elixir-ls/release/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+    }
+  }
 }
