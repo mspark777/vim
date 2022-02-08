@@ -81,9 +81,6 @@ packadd vim-jsx-pretty
 let g:javascript_plugin_jsdoc = 1
 packadd vim-javascript
 
-"" python
-packadd python-syntax
-
 "" git-blame
 packadd git-blame.vim
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
@@ -99,8 +96,8 @@ packadd vim-lsp-cxx-highlight
 "" json
 packadd vim-jsonc
 
-"" elixir
-packadd vim-elixir
+"" toml
+packadd vim-toml
 
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
