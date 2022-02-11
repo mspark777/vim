@@ -35,10 +35,3 @@ git config --global push.default simple
 1. brew install clipper
 2. ssh -R 8377:localhost:8377 ...
 3. $remote: nc -q 0 localhost 8377
-
-### ElixirLS is not working
-```sh
-$ rm -rf ~/.config/coc/extensions/node_modules/coc-elixir/els-release/*
-# download from https://github.com/elixir-lsp/elixir-ls
-$ unzip elixir-ls.zip -d ~/.config/coc/extensions/node_modules/coc-elixir/els-release/*
-```
