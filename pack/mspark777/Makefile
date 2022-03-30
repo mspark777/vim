@@ -12,13 +12,12 @@ install: clean
 	git clone --depth=1 https://github.com/MaxMEllon/vim-jsx-pretty.git start/vim-jsx-pretty
 	git clone --depth=1 https://github.com/zivyangll/git-blame.vim.git start/git-blame.vim
 	git clone --depth=1 https://github.com/rust-lang/rust.vim.git start/rust.vim
-	git clone --depth=1 https://github.com/jackguo380/vim-lsp-cxx-highlight.git start/vim-lsp-cxx-highlight
 	git clone --depth=1 https://github.com/kevinoid/vim-jsonc.git start/vim-jsonc
 	git clone --depth=1 https://github.com/cespare/vim-toml.git start/vim-toml
 
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
-	vim -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-clangd coc-swagger coc-svg coc-rust-analyzer coc-toml|qa!'
+	vim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml|qa!' temp
 
 clean:
 	rm -rf start

@@ -89,10 +89,6 @@ nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 let g:rustfmt_autosave = 1
 packadd rust.vim
 
-"" c
-let g:lsp_cxx_hl_use_text_props = 1
-packadd vim-lsp-cxx-highlight
-
 "" json
 packadd vim-jsonc
 
