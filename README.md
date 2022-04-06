@@ -25,10 +25,11 @@ My vim8 configure.
 
 ### Gitconfig
 ```sh
-git config --global user.name 'minsoo.park'
-git config --global user.email 'topangel777@gmail.com'
+git config user.name 'minsoo.park'
+git config user.email 'topangel777@gmail.com'
 git config --global core.editor vim
 git config --global push.default simple
+git config --global pager.branch false
 ```
 
 ### Remote copy
