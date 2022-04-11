@@ -31,6 +31,7 @@ git config --global core.editor vim
 git config --global push.default simple
 git config --global pager.branch false
 git config --global pager.config false
+git config --global pager.diff false
 ```
 
 ### Remote copy
