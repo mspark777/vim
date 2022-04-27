@@ -95,6 +95,9 @@ packadd vim-jsonc
 "" toml
 packadd vim-toml
 
+"" hbs
+packadd vim-ember-hbs
+
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
