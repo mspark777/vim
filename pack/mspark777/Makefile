@@ -1,3 +1,5 @@
+help:
+	@cat Makefile
 
 install: clean
 	mkdir -p start

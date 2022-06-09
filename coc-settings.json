@@ -1,5 +1,6 @@
 {
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": true,
-  "coc.preferences.formatOnSaveFiletypes": ["c"]
+  "coc.preferences.formatOnSaveFiletypes": ["c"],
+  "elixir.pathToElixirLS": "~/.vim/ls/elixir-ls/release/language_server.sh"
 }
