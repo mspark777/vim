@@ -98,6 +98,9 @@ packadd vim-toml
 "" hbs
 packadd vim-ember-hbs
 
+"" elixir
+packadd vim-elixir
+
 packadd coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
