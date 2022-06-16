@@ -23,6 +23,12 @@ My vim8 configure.
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all
 
+### SSHconfig - Ubuntu
+```sh
+Host *
+ IgnoreUnknown UseKeychain
+```
+
 ### Gitconfig
 ```sh
 git config user.name 'minsoo.park'
