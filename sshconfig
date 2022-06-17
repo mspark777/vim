@@ -1,3 +1,6 @@
+Host *
+ IgnoreUnknown UseKeychain
+
 Host github.laroun
  HostName github.com
  User git

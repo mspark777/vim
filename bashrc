@@ -9,3 +9,5 @@ function lvim {
     vim
   fi
 }
+
+alias pbcopy='xclip -sel clip'

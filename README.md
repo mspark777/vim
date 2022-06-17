@@ -18,16 +18,10 @@ My vim8 configure.
 2. apt install build-essential git wget curl tmux make
 3. VBoxGuestAdditions (VirtualBox)
 4. asdf
-5. node.js, erlang otp22, elixir
+5. node.js, erlang otp22, elixir, rust
 6. Docker, kubectl (or k8s)
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all
-
-### SSHconfig - Ubuntu
-```sh
-Host *
- IgnoreUnknown UseKeychain
-```
 
 ### Gitconfig
 ```sh
