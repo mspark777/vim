@@ -9,7 +9,7 @@ set clipboard^=unnamed,unnamedplus
 set expandtab
 set showmode
 set showcmd
-set cmdheight=2
+set cmdheight=1
 set nobackup
 set noswapfile
 set nowritebackup
