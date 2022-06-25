@@ -9,7 +9,7 @@ My vim8 configure.
 2. brew
 3. wget, tmux, asdf
 5. Docker, K8S
-6. node.js
+6. node.js, erlang, otp22, elixir, rust ( KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" adsf install erlang {version} )
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all
 
