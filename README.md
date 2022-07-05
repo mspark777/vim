@@ -9,7 +9,7 @@ My vim8 configure.
 2. brew
 3. wget, tmux, asdf
 5. Docker, K8S
-6. node.js, erlang, otp22, elixir, rust ( KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" adsf install erlang {version} )
+6. node.js, rust
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all
 
@@ -18,7 +18,7 @@ My vim8 configure.
 2. apt install build-essential git wget curl tmux make
 3. VBoxGuestAdditions (VirtualBox)
 4. asdf
-5. node.js, erlang otp22, elixir, rust
+5. node.js, rust
 6. Docker, kubectl (or k8s)
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all

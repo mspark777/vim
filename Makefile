@@ -2,10 +2,7 @@
 help:
 	@cat Makefile
 
-all: packages languages
+all: packages
 
 packages:
 	make -C pack/mspark777 install
-
-languages:
-	make -C ls all
