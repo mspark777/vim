@@ -109,11 +109,10 @@ packadd coc.nvim
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 
-"" it has a bug. https://github.com/neoclide/coc-tsserver/issues/381
-"inoremap <silent><expr> <TAB>
-"      \ pumvisible() ? "\<C-n>" :
-"      \ CheckBackspace() ? "\<TAB>" :
-"      \ coc#refresh()
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ CheckBackspace() ? "\<TAB>" :
+      \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! CheckBackspace() abort
