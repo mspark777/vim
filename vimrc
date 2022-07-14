@@ -101,11 +101,10 @@ packadd vim-toml
 "" hbs
 packadd vim-ember-hbs
 
-"" go
+"" golang
 packadd vim-go
 
 packadd coc.nvim
-
 
 "" from: https://github.com/neoclide/coc.nvim#example-vim-configuration
 " Use tab for trigger completion with characters ahead and navigate.
