@@ -101,6 +101,9 @@ packadd vim-toml
 "" hbs
 packadd vim-ember-hbs
 
+"" go
+packadd vim-go
+
 packadd coc.nvim
 
 
