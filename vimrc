@@ -33,7 +33,7 @@ set updatetime=300
 set signcolumn=yes
 set autoread
 set list
-set listchars=tab:•\ ,trail:•,extends:»,precedes:«
+set listchars=tab:•\ ,trail:•,extends:»,precedes:«,eol:¬,nbsp:_
 set shortmess+=c
 
 
@@ -103,6 +103,7 @@ packadd vim-ember-hbs
 
 "" golang
 au filetype go inoremap <buffer> . .<C-x><C-o>
+au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 packadd vim-go
 
 source ~/.vim/coc.vim
