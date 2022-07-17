@@ -53,26 +53,28 @@ filetype plugin indent on
 autocmd Filetype make setlocal noexpandtab
 
 "" colorscheme
-packadd vim-code-dark
 colorscheme codedark
+packadd vim-code-dark
 
 "" statusline
 let g:airline_theme = 'codedark'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 0
+nnoremap <silent> g] :bnext!<Enter>
+nnoremap <silent> g[ :bprevious!<Enter>
+
 packadd vim-fugitive
 packadd vim-airline
 packadd vim-airline-themes
-nnoremap <silent> g] :bnext!<Enter>
-nnoremap <silent> g[ :bprevious!<Enter>
+
 
 "" nerdtree
 let NERDTreeIgnore = [".pyc"]
 let NERDTreeShowHidden=1
-packadd nerdtree-git-plugin
-packadd nerdtree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+packadd nerdtree-git-plugin
+packadd nerdtree
 
 "" typescript
 let g:vim_jsx_pretty_colorful_config = 1
@@ -85,8 +87,8 @@ let g:javascript_plugin_jsdoc = 1
 packadd vim-javascript
 
 "" git-blame
-packadd git-blame.vim
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+packadd git-blame.vim
 
 "" rust
 let g:rustfmt_autosave = 1
