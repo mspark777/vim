@@ -1,5 +1,6 @@
 {
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": true,
-  "coc.preferences.bracketEnterImprove": true
+  "coc.preferences.bracketEnterImprove": true,
+  "snippets.ultisnips.enable": false
 }
