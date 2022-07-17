@@ -107,4 +107,5 @@ au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nb
 packadd vim-go
 
 source ~/.vim/coc.vim
+source ~/.vim/snippets.vim
 packadd coc.nvim
