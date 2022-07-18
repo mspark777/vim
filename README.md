@@ -25,7 +25,7 @@ My vim9 configure.
 ### Build vim
 ```sh
 apt update && apt upgrade -y
-apt install build-essential git wget curl tmux make libncurses-dev python3-dev python3-pip libperl-dev ruby-dev liblua5.3-dev liblua5.3-dev lua5.3
+apt install build-essential git wget curl tmux make libncurses-dev python3-dev python3-pip libperl-dev ruby-dev liblua5.3-dev liblua5.3-dev lua5.3 gettext
 pip install -U pip
 git clone --depth=1 https://github.com/vim/vim.git
 cd vim/src
