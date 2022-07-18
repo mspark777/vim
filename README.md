@@ -1,27 +1,38 @@
 # vim
 
-My vim8 configure.
+My vim9 configure.
 
 ## Install
 
 ### macOS
 1. XCode, command-line-tools
 2. brew
-3. wget, tmux, asdf
+3. vim, wget, tmux, asdf
 5. Docker, K8S
 6. node.js, rust
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all
 
 ### Ubuntu
-1. apt update && apt upgrade -y
-2. apt install build-essential git wget curl tmux make
-3. VBoxGuestAdditions (VirtualBox)
-4. asdf
-5. node.js, rust
+1. Build vim
+2. VBoxGuestAdditions (VirtualBox)
+3. asdf
+4. node.js, rust
 6. Docker, kubectl (or k8s)
 7. git clone git@github.com:mspark777/vim.git .vim
 8. cd .vim, make all
+
+### Build vim
+```sh
+apt update && apt upgrade -y
+apt install build-essential git wget curl tmux make libncurses-dev python3-dev python3-pip libperl-dev ruby-dev liblua5.3-dev liblua5.3-dev lua5.3
+pip install -U pip
+git clone --depth=1 https://github.com/vim/vim.git
+cd vim/src
+./configure --with-features=huge --enable-luainterp=yes --enable-rubyinterp=yes --enable-terminal --enable-perlinterp=yes --enable-python3interp=yes --enable-multibyte --enable-cscope  --enable-fail-if-missing  --prefix="${HOME}/Bins/vim"
+make
+make install
+```
 
 ### Gitconfig
 ```sh
