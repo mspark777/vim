@@ -105,8 +105,7 @@ packadd vim-ember-hbs
 
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
+let g:go_gopls_enabled = 0
 packadd vim-go
 
 source ~/.vim/coc.vim
