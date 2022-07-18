@@ -104,8 +104,9 @@ packadd vim-toml
 packadd vim-ember-hbs
 
 "" golang
-""au filetype go inoremap <buffer> . .<C-x><C-o>
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 packadd vim-go
 
 source ~/.vim/coc.vim
