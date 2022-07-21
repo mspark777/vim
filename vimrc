@@ -108,6 +108,12 @@ packadd vim-ember-hbs
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 packadd vim-go
 
+"" elixir
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+au BufRead,BufNewFile mix.lock set filetype=elixir
+packadd vim-elixir
+
 source ~/.vim/coc.vim
 source ~/.vim/snippets.vim
 packadd coc.nvim

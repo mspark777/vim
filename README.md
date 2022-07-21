@@ -8,19 +8,19 @@ My vim9 configure.
 1. XCode, command-line-tools
 2. brew
 3. vim, wget, tmux, asdf
-5. Docker, K8S
-6. node.js, rust
-7. git clone git@github.com:mspark777/vim.git .vim
-8. cd .vim, make all
+4. Docker, K8S
+5. node.js, rust, erlang, elixir ( KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" adsf install erlang {version} )
+6. git clone git@github.com:mspark777/vim.git .vim
+7. cd .vim, make all
 
 ### Ubuntu
 1. Build vim
 2. VBoxGuestAdditions (VirtualBox)
 3. asdf
-4. node.js, rust
-6. Docker, kubectl (or k8s)
-7. git clone git@github.com:mspark777/vim.git .vim
-8. cd .vim, make all
+4. node.js, erlang, elixir, rust
+5. Docker, kubectl (or k8s)
+6. git clone git@github.com:mspark777/vim.git .vim
+7. cd .vim, make all
 
 ### Build vim
 ```sh
