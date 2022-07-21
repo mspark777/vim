@@ -20,7 +20,7 @@ My vim9 configure.
 4. node.js, erlang, elixir, rust
 5. Docker, kubectl (or k8s)
 6. git clone git@github.com:mspark777/vim.git .vim
-7. cd .vim, make all
+7. cd .vim, make all (MEM + SWAP >= 64G)
 
 ### Build vim
 ```sh
