@@ -19,10 +19,10 @@ install: clean
 	git clone --depth=1 https://github.com/joukevandermaas/vim-ember-hbs.git start/vim-ember-hbs
 	git clone --depth=1 https://github.com/fatih/vim-go.git start/vim-go
 	git clone --depth=1 https://github.com/elixir-editors/vim-elixir.git start/vim-elixir
-
+	git clone --depth=1 https://github.com/vim-python/python-syntax.git start/python-syntax
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
-	vim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3|qa!' temp
+	vim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-python|qa!' temp
 
 clean:
 	rm -rf start

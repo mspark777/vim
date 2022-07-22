@@ -114,6 +114,9 @@ au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
 au BufRead,BufNewFile mix.lock set filetype=elixir
 packadd vim-elixir
 
+"" python
+packadd python-syntax
+
 source ~/.vim/coc.vim
 source ~/.vim/snippets.vim
 packadd coc.nvim
