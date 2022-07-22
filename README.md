@@ -15,12 +15,11 @@ My vim9 configure.
 
 ### Ubuntu
 1. Build vim
-2. VBoxGuestAdditions (VirtualBox)
-3. asdf
-4. node.js, erlang, elixir, rust
-5. Docker, kubectl (or k8s)
-6. git clone git@github.com:mspark777/vim.git .vim
-7. cd .vim, make all (MEM + SWAP >= 64G)
+2. asdf
+3. node.js, erlang, elixir, rust
+4. Docker, kubectl (or k8s)
+5. git clone git@github.com:mspark777/vim.git .vim
+6. cd .vim, make all (MEM + SWAP >= 64G)
 
 ### Build vim
 ```sh
