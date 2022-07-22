@@ -43,8 +43,9 @@ command Gits !git status
 command Gitd !git difftool -y --tool=vimdiff %
 command Gitds !git difftool -y --staged --tool=vimdiff %
 command Gitdp !git difftool -y HEAD^ HEAD --tool=vimdiff %
-command Chrome !open -a 'google chrome' %
+command Chrome !google-chrome %
 command Safari !open -a 'safari' %
+
 
 vnoremap <leader>y :w !pbcopy<CR><CR>
 
