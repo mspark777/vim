@@ -28,7 +28,7 @@ apt install build-essential git wget curl tmux make libncurses-dev python3-dev p
 pip install -U pip
 git clone --depth=1 https://github.com/vim/vim.git
 cd vim/src
-./configure --with-features=huge --with-tlib=ncurses --enable-luainterp=yes --enable-rubyinterp=yes --enable-terminal --enable-perlinterp=yes --enable-python3interp=yes --enable-multibyte --enable-cscope  --enable-fail-if-missing  --prefix="${HOME}/Bins/vim"
+./configure --with-features=huge --with-tlib=ncurses --enable-luainterp=yes --enable-rubyinterp=yes --enable-terminal --enable-perlinterp=yes --enable-python3interp=yes --with-python3-command=/usr/bin/python3 --enable-multibyte --enable-cscope  --enable-fail-if-missing  --prefix="${HOME}/Bins/vim"
 make
 make install
 ```
