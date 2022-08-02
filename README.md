@@ -36,11 +36,13 @@ make install
 ###nvim
 ```sh
 # https://github.com/neovim/neovim/releases
+# ubuntu apt install xclip
+mkdir ~/.config/nvim
 touch ~/.config/nvim/init.vim
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vim/vimrc
-#pip install pynvim
+# pip install pynvim
 ```
 
 ### Gitconfig
