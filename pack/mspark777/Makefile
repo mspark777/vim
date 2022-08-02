@@ -30,7 +30,7 @@ coc: clean-coc
 
 
 clean-coc:
-	-chmod u+w -R ~/.config/coc/extensions/coc-go-data
+	-chmod -R u+w ~/.config/coc/extensions/coc-go-data
 	rm -rf ~/.config/coc
 
 clean-packages:
