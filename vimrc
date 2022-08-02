@@ -122,6 +122,6 @@ packadd vim-elixir
 "" python
 packadd python-syntax
 
-source ~/.vim/coc.vim
 source ~/.vim/snippets.vim
+source ~/.vim/coc.vim
 packadd coc.nvim
