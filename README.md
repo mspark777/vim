@@ -33,6 +33,16 @@ make
 make install
 ```
 
+###nvim
+```sh
+# https://github.com/neovim/neovim/releases
+touch ~/.config/nvim/init.vim
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vim/vimrc
+#pip install pynvim
+```
+
 ### Gitconfig
 ```sh
 git config user.name 'minsoo.park'
