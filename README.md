@@ -38,10 +38,13 @@ make install
 # https://github.com/neovim/neovim/releases
 # ubuntu apt install xclip
 mkdir ~/.config/nvim
-touch ~/.config/nvim/init.vim
+cd ~/.config/nvim
+ln -s ~/.vim/coc-settings.json ./
+cat > init.vim << EOF
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vim/vimrc
+EOF
 # pip install pynvim
 ```
 
