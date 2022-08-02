@@ -4,7 +4,6 @@ set shiftwidth=2
 set softtabstop=2
 set encoding=utf-8
 set mouse=
-set ttymouse=
 set clipboard^=unnamed,unnamedplus
 set expandtab
 set showmode
@@ -28,7 +27,6 @@ set textwidth=80
 set colorcolumn=+1
 set laststatus=2
 set formatoptions-=t
-set term=xterm-256color
 set updatetime=300
 set signcolumn=yes
 set autoread
@@ -36,9 +34,15 @@ set list
 set listchars=tab:•\ ,trail:•,extends:»,precedes:«,eol:¬,nbsp:_
 set shortmess+=c
 set backspace=indent,eol,start
+set guicursor=
+
+if !has('nvim')
+  set term=xterm-256color
+  set ttymouse=
+endif
 
 
-command Gitg !git lg1
+comman Gitg !git lg1
 command Gits !git status
 command Gitd !git difftool -y --tool=vimdiff %
 command Gitds !git difftool -y --staged --tool=vimdiff %

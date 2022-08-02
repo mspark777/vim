@@ -3,5 +3,6 @@
   "tsserver.enableJavascript": true,
   "coc.preferences.bracketEnterImprove": true,
   "snippets.ultisnips.enable": true,
+  "codeLens.enable": true,
   "elixir.pathToElixirLS": "~/.vim/ls/elixir-ls/release/language_server.sh"
 }

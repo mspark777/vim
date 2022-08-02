@@ -3,7 +3,7 @@ help:
 
 all: packages coc
 
-packages: clean
+packages: clean-packages
 	mkdir -p start
 	git clone --depth=1 https://github.com/preservim/nerdtree.git start/nerdtree
 	git clone --depth=1 https://github.com/Xuyuanp/nerdtree-git-plugin.git start/nerdtree-git-plugin
@@ -25,9 +25,15 @@ packages: clean
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
 
-coc:
+coc: clean-coc
 	vim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright|qa!' temp
 
 
-clean:
+clean-coc:
+	-chmod u+w -R ~/.config/coc/extensions/coc-go-data
+	rm -rf ~/.config/coc
+
+clean-packages:
 	rm -rf start
+
+clean: clean-packages clean-coc
