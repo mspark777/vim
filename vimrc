@@ -36,22 +36,11 @@ set shortmess+=c
 set backspace=indent,eol,start
 set guicursor=
 
-if !has('nvim')
-  set term=xterm-256color
-  set ttymouse=
-endif
-
-
 comman Gitg !git lg1
 command Gits !git status
 command Gitd !git difftool -y --tool=vimdiff %
 command Gitds !git difftool -y --staged --tool=vimdiff %
 command Gitdp !git difftool -y HEAD^ HEAD --tool=vimdiff %
-command Chrome !google-chrome %
-command Safari !open -a 'safari' %
-
-
-vnoremap <leader>y :w !pbcopy<CR><CR>
 
 syntax on
 filetype plugin indent on
@@ -61,6 +50,14 @@ autocmd Filetype make setlocal noexpandtab
 "" colorscheme
 colorscheme codedark
 packadd vim-code-dark
+
+"" nerdtree
+let NERDTreeIgnore = [".pyc"]
+let NERDTreeShowHidden=1
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+packadd nerdtree-git-plugin
+packadd nerdtree
 
 "" statusline
 let g:airline_theme = 'codedark'
@@ -73,15 +70,6 @@ packadd vim-fugitive
 packadd vim-airline
 packadd vim-airline-themes
 
-
-"" nerdtree
-let NERDTreeIgnore = [".pyc"]
-let NERDTreeShowHidden=1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
-packadd nerdtree-git-plugin
-packadd nerdtree
-
 "" typescript
 let g:vim_jsx_pretty_colorful_config = 1
 let g:vim_jsx_pretty_highlight_close_tag =1
@@ -92,19 +80,10 @@ packadd vim-jsx-pretty
 let g:javascript_plugin_jsdoc = 1
 packadd vim-javascript
 
-"" git-blame
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
-packadd git-blame.vim
 
 "" rust
 let g:rustfmt_autosave = 1
 packadd rust.vim
-
-"" json
-packadd vim-jsonc
-
-"" toml
-packadd vim-toml
 
 "" hbs
 packadd vim-ember-hbs
@@ -121,6 +100,12 @@ packadd vim-elixir
 
 "" python
 packadd python-syntax
+
+if has('nvim')
+  source ~/.vim/nvim.vim
+else
+  source ~/.vim/vim.vim
+endif
 
 source ~/.vim/snippets.vim
 source ~/.vim/coc.vim

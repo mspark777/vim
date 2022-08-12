@@ -16,12 +16,11 @@ packages: clean-packages
 	git clone --depth=1 https://github.com/MaxMEllon/vim-jsx-pretty.git start/vim-jsx-pretty
 	git clone --depth=1 https://github.com/zivyangll/git-blame.vim.git start/git-blame.vim
 	git clone --depth=1 https://github.com/rust-lang/rust.vim.git start/rust.vim
-	git clone --depth=1 https://github.com/kevinoid/vim-jsonc.git start/vim-jsonc
-	git clone --depth=1 https://github.com/cespare/vim-toml.git start/vim-toml
 	git clone --depth=1 https://github.com/joukevandermaas/vim-ember-hbs.git start/vim-ember-hbs
 	git clone --depth=1 https://github.com/fatih/vim-go.git start/vim-go
 	git clone --depth=1 https://github.com/elixir-editors/vim-elixir.git start/vim-elixir
 	git clone --depth=1 https://github.com/vim-python/python-syntax.git start/python-syntax
+	git clone --depth=1 https://github.com/APZelos/blamer.nvim.git start/blamer.nvim
 	# It must be installed at last.
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
 
