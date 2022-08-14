@@ -101,12 +101,11 @@ packadd vim-elixir
 "" python
 packadd python-syntax
 
-if has('nvim')
-  source ~/.vim/nvim.vim
-else
-  source ~/.vim/vim.vim
-endif
+"" blamer.nvim
+let g:blamer_enabled = 1
+let g:blamer_show_in_visual_modes = 0
+packadd blamer.nvim
 
-source ~/.vim/snippets.vim
-source ~/.vim/coc.vim
+source ~/.config/nvim/snippets.vim
+source ~/.config/nvim/coc.vim
 packadd coc.nvim

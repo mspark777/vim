@@ -14,7 +14,6 @@ packages: clean-packages
 	git clone --depth=1 https://github.com/pangloss/vim-javascript.git start/vim-javascript
 	git clone --depth=1 https://github.com/leafgarland/typescript-vim.git start/typescript-vim
 	git clone --depth=1 https://github.com/MaxMEllon/vim-jsx-pretty.git start/vim-jsx-pretty
-	git clone --depth=1 https://github.com/zivyangll/git-blame.vim.git start/git-blame.vim
 	git clone --depth=1 https://github.com/rust-lang/rust.vim.git start/rust.vim
 	git clone --depth=1 https://github.com/joukevandermaas/vim-ember-hbs.git start/vim-ember-hbs
 	git clone --depth=1 https://github.com/fatih/vim-go.git start/vim-go
