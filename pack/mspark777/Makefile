@@ -24,7 +24,7 @@ packages: clean-packages
 	git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git start/coc.nvim
 
 coc: clean-coc
-	vim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright|qa!' temp
+	nvim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright|qa!'
 
 
 clean-coc:
