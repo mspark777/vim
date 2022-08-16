@@ -1,6 +1,10 @@
 {
   "eslint.autoFixOnSave": true,
   "tsserver.enableJavascript": true,
+  "typescript.referencesCodeLens.enable": false,
+  "javascript.referencesCodeLens.enable": false,
+  "typescript.implementationsCodeLens.enable": false,
+  "javascript.implementationsCodeLens.enable": false,
   "snippets.ultisnips.enable": true,
   "codeLens.enable": true,
   "elixir.pathToElixirLS": "~/.config/nvim/ls/elixir-ls/release/language_server.sh",
