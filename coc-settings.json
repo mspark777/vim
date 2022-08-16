@@ -5,7 +5,7 @@
   "codeLens.enable": true,
   "elixir.pathToElixirLS": "~/.config/nvim/ls/elixir-ls/release/language_server.sh",
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.local/bin/black",
+  "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
   "coc.preferences.formatOnSaveFiletypes": ["python", "elixir"],
   "coc.preferences.formatOnType": true,
