@@ -1,7 +1,5 @@
 .vscode
 /ls/*
-/pack/mspark777/*
 
-!/pack/mspark777/Makefile
 !/ls/Makefile
 !/ls/*.sh
