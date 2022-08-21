@@ -11,7 +11,7 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python", "elixir", "java", "kotlin"],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "elixir"],
   "coc.preferences.formatOnType": true,
   "coc.preferences.willSaveHandlerTimeout": 3000
 }

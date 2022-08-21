@@ -10,7 +10,8 @@ packages: clean_packages
 
 coc: clean_coc
 	mkdir -p $(cocextdir)
-	cd $(cocextdir) &&  npm install coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright coc-java coc-kotlin coc-tabnine
+	cp ./.tool-versions $(cocextdir)
+	cd $(cocextdir) && npm install coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright coc-tabnine
 
 languages:
 	make -C ls all
