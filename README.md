@@ -29,12 +29,3 @@ git config --global pager.branch false
 git config --global pager.config false
 git config --global pager.diff false
 ```
-
-## Languages
-```sh
-nodejs 16.16.0
-elixir 1.13.4-otp-22
-erlang 22.3.4.26
-golang 1.17.6
-python 3.10.0
-```
