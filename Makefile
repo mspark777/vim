@@ -9,9 +9,8 @@ packages: clean_packages
 	${SHELL} ./install_packages.sh $(startdir)
 
 coc: clean_coc
-	mkdir -p $(cocextdir)
-	cp ./.tool-versions $(cocextdir)
-	cd $(cocextdir) && npm install coc-sh coc-css coc-git coc-html coc-json coc-tsserver coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-rust-analyzer coc-toml coc-snippets coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright coc-tabnine
+	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright|qa!'
+	nvim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-toml coc-snippets coc-tabnine|qa!'
 
 languages:
 	make -C ls all
