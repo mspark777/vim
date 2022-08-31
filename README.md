@@ -29,4 +29,5 @@ git config --global pager.branch false
 git config --global pager.config false
 git config --global pager.diff false
 git config --global diff.tool vimdiff
+git config --global init.defaultBranch master
 ```
