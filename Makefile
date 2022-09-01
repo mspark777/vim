@@ -10,7 +10,7 @@ packages: clean_packages
 
 coc: clean_coc
 	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go coc-elixir @yaegassy/coc-tailwindcss3 coc-pyright|qa!'
-	nvim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-toml coc-snippets coc-tabnine|qa!'
+	nvim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-toml coc-snippets|qa!'
 
 languages:
 	make -C ls all
