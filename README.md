@@ -8,7 +8,6 @@ My nvim configure.
 1. brew, asdf, nvim
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim, make all
-1. if pyc error: pip install pynvim
 1. ( KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" asdf install erlang {version} )
 
 ### Ubuntu
@@ -16,7 +15,6 @@ My nvim configure.
 1. apt install xclip
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim, make all (MEM + SWAP >= 64G)
-1. if pyc error: pip install pynvim
 
 ### Gitconfig
 ```sh
