@@ -17,6 +17,5 @@ git clone --depth=1 https://github.com/fatih/vim-go.git
 git clone --depth=1 https://github.com/elixir-editors/vim-elixir.git
 git clone --depth=1 https://github.com/vim-python/python-syntax.git
 git clone --depth=1 https://github.com/APZelos/blamer.nvim.git
-git clone --depth=1 https://github.com/dart-lang/dart-vim-plugin.git
 # It must be installed at last.
 git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git
