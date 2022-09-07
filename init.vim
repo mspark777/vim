@@ -87,5 +87,8 @@ au BufRead,BufNewFile mix.lock set filetype=elixir
 let g:blamer_enabled = 1
 let g:blamer_show_in_visual_modes = 0
 
+"" dart
+let dart_html_in_string=v:true
+
 source ~/.config/nvim/snippets.vim
 source ~/.config/nvim/coc.vim
