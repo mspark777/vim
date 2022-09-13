@@ -6,11 +6,10 @@
   "typescript.implementationsCodeLens.enable": false,
   "javascript.implementationsCodeLens.enable": false,
   "codeLens.enable": true,
-  "elixir.pathToElixirLS": "~/.config/nvim/ls/elixir-ls/release/language_server.sh",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python", "elixir"],
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
   "coc.preferences.formatOnType": true,
   "coc.preferences.willSaveHandlerTimeout": 3000
 }

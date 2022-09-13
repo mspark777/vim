@@ -8,13 +8,11 @@ My nvim configure.
 1. brew, asdf, nvim
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim, make all
-1. ( KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" asdf install erlang {version} )
 
 ### Ubuntu
 1. asdf, nvim(https://github.com/neovim/neovim/releases)
 1. apt install xclip
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-1. cd ~/.config/nvim, make all (MEM + SWAP >= 64G)
 
 ### Gitconfig
 ```sh

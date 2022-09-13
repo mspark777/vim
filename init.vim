@@ -78,11 +78,6 @@ let g:rustfmt_autosave = 1
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 
-"" elixir
-au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
-au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
-au BufRead,BufNewFile mix.lock set filetype=elixir
-
 "" blamer.nvim
 let g:blamer_enabled = 1
 let g:blamer_show_in_visual_modes = 0

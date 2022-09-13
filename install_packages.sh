@@ -14,7 +14,6 @@ git clone --depth=1 https://github.com/MaxMEllon/vim-jsx-pretty.git
 git clone --depth=1 https://github.com/rust-lang/rust.vim.git
 git clone --depth=1 https://github.com/joukevandermaas/vim-ember-hbs.git
 git clone --depth=1 https://github.com/fatih/vim-go.git
-git clone --depth=1 https://github.com/elixir-editors/vim-elixir.git
 git clone --depth=1 https://github.com/vim-python/python-syntax.git
 git clone --depth=1 https://github.com/APZelos/blamer.nvim.git
 # It must be installed at last.
