@@ -1,5 +1,2 @@
 .vscode
-/ls/*
-
-!/ls/Makefile
-!/ls/*.sh
+/pack

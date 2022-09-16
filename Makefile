@@ -1,12 +1,13 @@
-startdir=${HOME}/.local/share/nvim/site/pack/my/start
-cocdir=${HOME}/.config/coc
-cocextdir=$(cocdir)/extensions
+PACKDIR=${HOME}/.config/nvim/pack
+STARTDIR=$(PACKDIR)/my/start
+COCDIR=${HOME}/.config/coc
+COCEXTDIR=$(COCDIR)/extensions
 
 help:
 	@cat Makefile
 
 packages: clean_packages
-	${SHELL} ./install_packages.sh $(startdir)
+	${SHELL} ./install_packages.sh $(STARTDIR)
 
 coc: clean_coc
 	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go @yaegassy/coc-tailwindcss3 coc-pyright coc-lua|qa!'
@@ -15,8 +16,8 @@ coc: clean_coc
 all: packages coc
 
 clean_packages:
-	rm -rf $(startdir)
+	rm -rf $(PACKDIR)
 
 clean_coc:
-	-chmod -R u+w $(cocextdir)/coc-go-data
-	rm -rf $(cocdir)
+	-chmod -R u+w $(COCEXTDIR)/coc-go-data
+	rm -rf $(COCDIR)
