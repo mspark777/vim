@@ -36,7 +36,7 @@ set shortmess+=c
 set backspace=indent,eol,start
 set guicursor=
 
-comman Gitg !git lg1
+command Gitg !git lg1
 command Gits !git status
 command Gitd !git difftool -y --tool=vimdiff %
 command Gitds !git difftool -y --staged --tool=vimdiff %
@@ -48,6 +48,7 @@ filetype plugin indent on
 autocmd Filetype make setlocal noexpandtab
 
 "" colorscheme
+let g:airline_theme = 'codedark'
 colorscheme codedark
 
 "" nerdtree
