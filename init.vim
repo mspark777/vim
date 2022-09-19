@@ -60,7 +60,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == ""
 "" statusline
 let g:airline_theme = 'codedark'
 let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 nnoremap <silent> g] :bnext!<Enter>
 nnoremap <silent> g[ :bprevious!<Enter>
 
