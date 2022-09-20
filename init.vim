@@ -45,6 +45,9 @@ command Gitdp !git difftool -y HEAD^ HEAD --tool=vimdiff %
 syntax on
 filetype plugin indent on
 
+"" bultin json
+let g:vim_json_conceal = 0
+
 autocmd Filetype make setlocal noexpandtab
 
 "" colorscheme
