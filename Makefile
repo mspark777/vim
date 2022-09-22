@@ -10,8 +10,8 @@ packages: clean_packages
 	${SHELL} ./install_packages.sh $(STARTDIR)
 
 coc: clean_coc
-	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go @yaegassy/coc-tailwindcss3 coc-pyright coc-lua|qa!'
-	nvim -R -c 'CocInstall -sync coc-sh coc-css coc-git coc-html coc-json coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-toml|qa!'
+	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go coc-pyright coc-lua coc-sh|qa!'
+	nvim -R -c 'CocInstall -sync @yaegassy/coc-tailwindcss3 coc-css coc-git coc-html coc-json coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-toml|qa!'
 
 all: packages coc
 
