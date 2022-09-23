@@ -6,12 +6,13 @@ My nvim configure.
 
 ### macOS
 1. brew, asdf, nvim
+1. brew install ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim, make all
 
 ### Ubuntu
 1. asdf, nvim(https://github.com/neovim/neovim/releases)
-1. apt install xclip
+1. apt install xclip ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 
 ### Gitconfig

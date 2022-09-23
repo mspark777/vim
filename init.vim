@@ -89,4 +89,7 @@ let g:blamer_show_in_visual_modes = 0
 "" ctrlp
 let g:ctrlp_custom_ignore = 'node_modules'
 
+"" ctrlsf
+let g:ctrlsf_default_view_mode = 'compact'
+
 source ~/.config/nvim/coc.vim

@@ -18,5 +18,7 @@ git clone --depth=1 https://github.com/vim-python/python-syntax.git
 git clone --depth=1 https://github.com/APZelos/blamer.nvim.git
 git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git
 git clone --depth=1 https://github.com/Yggdroot/indentLine.git
+git clone --depth=1 https://github.com/dyng/ctrlsf.vim.git
+git clone --depth=1 https://github.com/mg979/vim-visual-multi.git
 # It must be installed at last.
 git clone --branch release --depth=1 https://github.com/neoclide/coc.nvim.git
