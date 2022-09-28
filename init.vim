@@ -91,5 +91,6 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 "" ctrlsf
 let g:ctrlsf_default_view_mode = 'compact'
+nmap <leader><C-P> <Plug>CtrlSFPrompt
 
 source ~/.config/nvim/coc.vim
