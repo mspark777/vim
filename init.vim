@@ -2,7 +2,7 @@ set hidden
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set encoding=utf-8
+set encoding=utf8
 set mouse=
 set clipboard^=unnamed,unnamedplus
 set expandtab
@@ -35,6 +35,7 @@ set listchars=tab:•\ ,trail:•,extends:»,precedes:«,eol:¬,nbsp:_
 set shortmess+=c
 set backspace=indent,eol,start
 set guicursor=
+set termguicolors
 
 command Gitg !git lg1
 command Gits !git status
@@ -50,22 +51,30 @@ let g:vim_json_conceal = 0
 
 autocmd Filetype make setlocal noexpandtab
 
-"" colorscheme
-let g:airline_theme = 'codedark'
-colorscheme codedark
+augroup packer_user_config
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+augroup end
 
-"" nerdtree
-let NERDTreeIgnore = [".pyc"]
-let NERDTreeShowHidden=1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+lua require('plugins')
 
-"" statusline
-let g:airline_theme = 'codedark'
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 0
-nnoremap <silent> g] :bnext!<Enter>
-nnoremap <silent> g[ :bprevious!<Enter>
+
+"" barbar
+nnoremap <silent>    <A-,> <Cmd>BufferPrevious<CR>
+nnoremap <silent>    <A-.> <Cmd>BufferNext<CR>
+nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
+nnoremap <silent>    <A-<> <Cmd>BufferMovePrevious<CR>
+nnoremap <silent>    <A->> <Cmd>BufferMoveNext<CR>
+nnoremap <silent>    <A-1> <Cmd>BufferGoto 1<CR>
+nnoremap <silent>    <A-2> <Cmd>BufferGoto 2<CR>
+nnoremap <silent>    <A-3> <Cmd>BufferGoto 3<CR>
+nnoremap <silent>    <A-4> <Cmd>BufferGoto 4<CR>
+nnoremap <silent>    <A-5> <Cmd>BufferGoto 5<CR>
+nnoremap <silent>    <A-6> <Cmd>BufferGoto 6<CR>
+nnoremap <silent>    <A-7> <Cmd>BufferGoto 7<CR>
+nnoremap <silent>    <A-8> <Cmd>BufferGoto 8<CR>
+nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
+nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
 
 "" typescript
 let g:vim_jsx_pretty_colorful_config = 1

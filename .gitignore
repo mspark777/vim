@@ -1,2 +1,3 @@
 .vscode
-/pack
+plugin/packer_compiled.lua
+.luarc.json
