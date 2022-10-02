@@ -13,7 +13,7 @@ fonts:
 
 packages: clean_packages
 	mkdir -p $(STARTDIR)
-	git clone --depth 1 https://github.com/wbthomason/packer.nvim $(STARTDIR)/
+	nvim 
 
 coc: clean_coc
 	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go coc-pyright coc-lua coc-sh|qa!'

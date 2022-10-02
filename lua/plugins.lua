@@ -1,6 +1,20 @@
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+local packer_bootstrap = ensure_packer()
+
+
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'pangloss/vim-javascript'
@@ -14,101 +28,120 @@ return require('packer').startup(function(use)
   use 'dyng/ctrlsf.vim'
   use 'mg979/vim-visual-multi'
   use {
+    'lewis6991/gitsigns.nvim',
+    tag = 'release',
+    config = function()
+        require('gitsigns').setup({
+          current_line_blame = true
+      })
+    end
+  }
+  use 'lukas-reineke/indent-blankline.nvim'
+  use { 'neoclide/coc.nvim', branch = 'release' }
+  use {
     'Mofiqul/vscode.nvim',
-    config = require('vscode').setup({})
+    config = function()
+      require('vscode').setup({})
+    end
   }
   use {
     'kyazdani42/nvim-web-devicons',
-    config = require('nvim-web-devicons').setup({})
+    config = function()
+      require('nvim-web-devicons').setup({})
+    end
   }
-  use {'romgrk/barbar.nvim'}
+  use {
+    'romgrk/barbar.nvim',
+    requires = {{'kyazdani42/nvim-web-devicons', opt = true}}
+  }
   use {
     'akinsho/bufferline.nvim',
     tag = "v2.*",
-    config = require('bufferline').setup({
-      options = {
-        buffer_close_icon = "",
-        close_command = "Bdelete %d",
-        close_icon = "",
-        indicator_icon = " ",
-        left_trunc_marker = "",
-        modified_icon = "●",
-        offsets = { { filetype = "NvimTree", text = "EXPLORER", text_align = "center" } },
-        right_mouse_command = "Bdelete! %d",
-        right_trunc_marker = "",
-        show_close_icon = false,
-        show_tab_indicators = true,
-      },
-      highlights = {
-          fill = {
-              guifg = { attribute = "fg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "StatusLineNC" },
-          },
-          background = {
-              guifg = { attribute = "fg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "StatusLine" },
-          },
-          buffer_visible = {
-              gui = "",
-              guifg = { attribute = "fg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "Normal" },
-          },
-          buffer_selected = {
-              gui = "",
-              guifg = { attribute = "fg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "Normal" },
-          },
-          separator = {
-              guifg = { attribute = "bg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "StatusLine" },
-          },
-          separator_selected = {
-              guifg = { attribute = "fg", highlight = "Special" },
-              guibg = { attribute = "bg", highlight = "Normal" },
-          },
-          separator_visible = {
-              guifg = { attribute = "fg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "StatusLineNC" },
-          },
-          close_button = {
-              guifg = { attribute = "fg", highlight = "Normal" },
-              guibg = { attribute = "bg", highlight = "StatusLine" },
-          },
-          close_button_selected = {
-              guifg = { attribute = "fg", highlight = "normal" },
-              guibg = { attribute = "bg", highlight = "normal" },
-          },
-          close_button_visible = {
-              guifg = { attribute = "fg", highlight = "normal" },
-              guibg = { attribute = "bg", highlight = "normal" },
-          },
-      },
-    })
+    requires = {{'kyazdani42/nvim-web-devicons', opt = true}},
+    config = function()
+      require('bufferline').setup({
+        options = {
+          buffer_close_icon = "",
+          close_command = "Bdelete %d",
+          close_icon = "",
+          indicator_icon = " ",
+          left_trunc_marker = "",
+          modified_icon = "●",
+          offsets = { { filetype = "NvimTree", text = "EXPLORER", text_align = "center" } },
+          right_mouse_command = "Bdelete! %d",
+          right_trunc_marker = "",
+          show_close_icon = false,
+          show_tab_indicators = true,
+        },
+        highlights = {
+            fill = {
+                guifg = { attribute = "fg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "StatusLineNC" },
+            },
+            background = {
+                guifg = { attribute = "fg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "StatusLine" },
+            },
+            buffer_visible = {
+                gui = "",
+                guifg = { attribute = "fg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "Normal" },
+            },
+            buffer_selected = {
+                gui = "",
+                guifg = { attribute = "fg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "Normal" },
+            },
+            separator = {
+                guifg = { attribute = "bg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "StatusLine" },
+            },
+            separator_selected = {
+                guifg = { attribute = "fg", highlight = "Special" },
+                guibg = { attribute = "bg", highlight = "Normal" },
+            },
+            separator_visible = {
+                guifg = { attribute = "fg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "StatusLineNC" },
+            },
+            close_button = {
+                guifg = { attribute = "fg", highlight = "Normal" },
+                guibg = { attribute = "bg", highlight = "StatusLine" },
+            },
+            close_button_selected = {
+                guifg = { attribute = "fg", highlight = "normal" },
+                guibg = { attribute = "bg", highlight = "normal" },
+            },
+            close_button_visible = {
+                guifg = { attribute = "fg", highlight = "normal" },
+                guibg = { attribute = "bg", highlight = "normal" },
+            },
+        },
+      })
+    end
   }
-  use {
-    'lewis6991/gitsigns.nvim',
-    tag = 'release',
-    config = require('gitsigns').setup({
-        current_line_blame = true
-    })
-  }
-  use "lukas-reineke/indent-blankline.nvim"
   use {
     'nvim-lualine/lualine.nvim',
-    config = require('lualine').setup({
-      options = {
-        theme = 'vscode',
-      },
-    })
+    requires = {{'kyazdani42/nvim-web-devicons', opt = true}},
+    config = function()
+        require('lualine').setup({
+        options = {
+          theme = 'vscode',
+        },
+      })
+    end
   }
   use {
     'kyazdani42/nvim-tree.lua',
-    config = require('nvim-tree').setup({
-      open_on_setup = true
-    })
+    requires = {{'kyazdani42/nvim-web-devicons', opt = true}},
+    config = function()
+        require('nvim-tree').setup({
+        open_on_setup = true
+      })
+    end
   }
-  use {
-    'neoclide/coc.nvim',
-    branch = 'release'
-  }
+
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
