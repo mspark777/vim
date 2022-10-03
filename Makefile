@@ -6,6 +6,11 @@ COCEXTDIR=$(COCDIR)/extensions
 help:
 	@cat Makefile
 
+fonts:
+	git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+	cd nerd-fonts && ./install.sh
+	rm -rf nerd-fonts
+
 packages: clean_packages
 	mkdir -p $(STARTDIR)
 

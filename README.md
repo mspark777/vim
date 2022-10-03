@@ -10,6 +10,7 @@ My nvim configure.
 1. https://github.com/ryanoasis/nerd-fonts
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
+1. make fonts
 1. nvim
 1. make coc
 
@@ -19,6 +20,7 @@ My nvim configure.
 1. https://github.com/ryanoasis/nerd-fonts
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
+1. make fonts
 1. nvim
 1. make coc
 
