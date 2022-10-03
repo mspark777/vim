@@ -37,12 +37,6 @@ set backspace=indent,eol,start
 set guicursor=
 set termguicolors
 
-command Gitg !git lg1
-command Gits !git status
-command Gitd !git difftool -y --tool=vimdiff %
-command Gitds !git difftool -y --staged --tool=vimdiff %
-command Gitdp !git difftool -y HEAD^ HEAD --tool=vimdiff %
-
 syntax on
 filetype plugin indent on
 
@@ -70,6 +64,9 @@ nnoremap <silent>    <A-7> <Cmd>BufferGoto 7<CR>
 nnoremap <silent>    <A-8> <Cmd>BufferGoto 8<CR>
 nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
 nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
+
+"" gitsigns
+nmap <leader>hp :Gitsigns preview_hunk<CR>
 
 "" typescript
 let g:vim_jsx_pretty_colorful_config = 1
