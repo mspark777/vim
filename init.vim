@@ -83,10 +83,6 @@ let g:rustfmt_autosave = 1
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 
-"" blamer.nvim
-let g:blamer_enabled = 1
-let g:blamer_show_in_visual_modes = 0
-
 "" ctrlp
 let g:ctrlp_custom_ignore = 'node_modules'
 
