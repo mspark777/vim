@@ -7,13 +7,20 @@ My nvim configure.
 ### macOS
 1. brew, asdf, nvim
 1. brew install ack
+1. https://github.com/ryanoasis/nerd-fonts
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-1. cd ~/.config/nvim, make all
+1. cd ~/.config/nvim
+1. nvim
+1. make coc
 
 ### Ubuntu
 1. asdf, nvim(https://github.com/neovim/neovim/releases)
 1. apt install xclip ack
+1. https://github.com/ryanoasis/nerd-fonts
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+1. cd ~/.config/nvim
+1. nvim
+1. make coc
 
 ### Gitconfig
 ```sh

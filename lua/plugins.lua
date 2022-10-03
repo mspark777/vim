@@ -14,6 +14,9 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+local setup = function(name)
+  return string.format('require("setup/%s")', name)
+end
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -27,118 +30,43 @@ return require('packer').startup(function(use)
   use 'ctrlpvim/ctrlp.vim'
   use 'dyng/ctrlsf.vim'
   use 'mg979/vim-visual-multi'
+  use 'lukas-reineke/indent-blankline.nvim'
   use {
     'lewis6991/gitsigns.nvim',
     tag = 'release',
-    config = function()
-        require('gitsigns').setup({
-          current_line_blame = true
-      })
-    end
+    config = setup('gitsigns')
   }
-  use 'lukas-reineke/indent-blankline.nvim'
-  use { 'neoclide/coc.nvim', branch = 'release' }
+  use {
+    'neoclide/coc.nvim',
+    branch = 'release'
+  }
   use {
     'Mofiqul/vscode.nvim',
-    config = function()
-      require('vscode').setup({})
-    end
+    config = setup('vscode')
   }
   use {
     'kyazdani42/nvim-web-devicons',
-    config = function()
-      require('nvim-web-devicons').setup({})
-    end
+    config = setup('nvim-web-devicons')
   }
   use {
     'romgrk/barbar.nvim',
-    requires = {{'kyazdani42/nvim-web-devicons', opt = true}}
+    requires = {'kyazdani42/nvim-web-devicons'}
   }
   use {
     'akinsho/bufferline.nvim',
     tag = "v2.*",
-    requires = {{'kyazdani42/nvim-web-devicons', opt = true}},
-    config = function()
-      require('bufferline').setup({
-        options = {
-          buffer_close_icon = "",
-          close_command = "Bdelete %d",
-          close_icon = "",
-          indicator_icon = " ",
-          left_trunc_marker = "",
-          modified_icon = "●",
-          offsets = { { filetype = "NvimTree", text = "EXPLORER", text_align = "center" } },
-          right_mouse_command = "Bdelete! %d",
-          right_trunc_marker = "",
-          show_close_icon = false,
-          show_tab_indicators = true,
-        },
-        highlights = {
-            fill = {
-                guifg = { attribute = "fg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "StatusLineNC" },
-            },
-            background = {
-                guifg = { attribute = "fg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "StatusLine" },
-            },
-            buffer_visible = {
-                gui = "",
-                guifg = { attribute = "fg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "Normal" },
-            },
-            buffer_selected = {
-                gui = "",
-                guifg = { attribute = "fg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "Normal" },
-            },
-            separator = {
-                guifg = { attribute = "bg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "StatusLine" },
-            },
-            separator_selected = {
-                guifg = { attribute = "fg", highlight = "Special" },
-                guibg = { attribute = "bg", highlight = "Normal" },
-            },
-            separator_visible = {
-                guifg = { attribute = "fg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "StatusLineNC" },
-            },
-            close_button = {
-                guifg = { attribute = "fg", highlight = "Normal" },
-                guibg = { attribute = "bg", highlight = "StatusLine" },
-            },
-            close_button_selected = {
-                guifg = { attribute = "fg", highlight = "normal" },
-                guibg = { attribute = "bg", highlight = "normal" },
-            },
-            close_button_visible = {
-                guifg = { attribute = "fg", highlight = "normal" },
-                guibg = { attribute = "bg", highlight = "normal" },
-            },
-        },
-      })
-    end
+    requires = {'kyazdani42/nvim-web-devicons'},
+    config = setup('bufferline')
   }
   use {
     'nvim-lualine/lualine.nvim',
-    requires = {{'kyazdani42/nvim-web-devicons', opt = true}},
-    config = function()
-        require('lualine').setup({
-        options = {
-          theme = 'vscode',
-        },
-      })
-    end
+    requires = {'kyazdani42/nvim-web-devicons'},
+    config = setup('lualine')
   }
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {{'kyazdani42/nvim-web-devicons', opt = true}},
-    config = function()
-        require('nvim-tree').setup({
-        open_on_setup = true
-      })
-    end
+    requires = {'kyazdani42/nvim-web-devicons'},
+    config = setup('nvim-tree')
   }
 
   if packer_bootstrap then

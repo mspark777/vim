@@ -51,11 +51,6 @@ let g:vim_json_conceal = 0
 
 autocmd Filetype make setlocal noexpandtab
 
-augroup packer_user_config
-  autocmd!
-  autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-augroup end
-
 lua require('plugins')
 
 
