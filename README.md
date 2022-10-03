@@ -5,9 +5,8 @@ My nvim configure.
 ## Install
 
 ### macOS
-1. brew, asdf, nvim
+1. brew, asdf, nvim, iterm2
 1. brew install ack
-1. https://github.com/ryanoasis/nerd-fonts
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. make fonts
@@ -17,7 +16,6 @@ My nvim configure.
 ### Ubuntu
 1. asdf, nvim(https://github.com/neovim/neovim/releases)
 1. apt install xclip ack
-1. https://github.com/ryanoasis/nerd-fonts
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. make fonts
