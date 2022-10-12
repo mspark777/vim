@@ -7,9 +7,8 @@ help:
 	@cat Makefile
 
 fonts:
-	git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-	cd nerd-fonts && ./install.sh
-	rm -rf nerd-fonts
+	-[ ! -d "nerd-fonts" ] && git clone https://github.com/ryanoasis/nerd-fonts.git
+	cd nerd-fonts && git pull && ./install.sh
 
 packages: clean_packages
 	mkdir -p $(STARTDIR)
@@ -24,3 +23,6 @@ clean_packages:
 clean_coc:
 	-chmod -R u+w $(COCEXTDIR)/coc-go-data
 	rm -rf $(COCDIR)
+
+clean_fonts:
+	rm -rf nerd-fonts
