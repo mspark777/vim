@@ -40,6 +40,7 @@ set termguicolors
 syntax on
 filetype plugin indent on
 
+
 "" bultin json
 let g:vim_json_conceal = 0
 
@@ -49,21 +50,39 @@ lua require('plugins')
 
 
 "" barbar
-nnoremap <silent>    <A-,> <Cmd>BufferPrevious<CR>
-nnoremap <silent>    <A-.> <Cmd>BufferNext<CR>
-nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
-nnoremap <silent>    <A-<> <Cmd>BufferMovePrevious<CR>
-nnoremap <silent>    <A->> <Cmd>BufferMoveNext<CR>
-nnoremap <silent>    <A-1> <Cmd>BufferGoto 1<CR>
-nnoremap <silent>    <A-2> <Cmd>BufferGoto 2<CR>
-nnoremap <silent>    <A-3> <Cmd>BufferGoto 3<CR>
-nnoremap <silent>    <A-4> <Cmd>BufferGoto 4<CR>
-nnoremap <silent>    <A-5> <Cmd>BufferGoto 5<CR>
-nnoremap <silent>    <A-6> <Cmd>BufferGoto 6<CR>
-nnoremap <silent>    <A-7> <Cmd>BufferGoto 7<CR>
-nnoremap <silent>    <A-8> <Cmd>BufferGoto 8<CR>
-nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
-nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
+if has('macunix')
+  nnoremap <silent> <ESC>, <Cmd>BufferPrevious<CR>
+  nnoremap <silent> <ESC>. <Cmd>BufferNext<CR>
+  nnoremap <silent> <ESC>c <Cmd>BufferClose<CR>
+  nnoremap <silent> <ESC>< <Cmd>BufferMovePrevious<CR>
+  nnoremap <silent> <ESC>> <Cmd>BufferMoveNext<CR>
+  nnoremap <silent> <ESC>1 <Cmd>BufferGoto 1<CR>
+  nnoremap <silent> <ESC>2 <Cmd>BufferGoto 2<CR>
+  nnoremap <silent> <ESC>3 <Cmd>BufferGoto 3<CR>
+  nnoremap <silent> <ESC>4 <Cmd>BufferGoto 4<CR>
+  nnoremap <silent> <ESC>5 <Cmd>BufferGoto 5<CR>
+  nnoremap <silent> <ESC>6 <Cmd>BufferGoto 6<CR>
+  nnoremap <silent> <ESC>7 <Cmd>BufferGoto 7<CR>
+  nnoremap <silent> <ESC>8 <Cmd>BufferGoto 8<CR>
+  nnoremap <silent> <ESC>9 <Cmd>BufferGoto 9<CR>
+  nnoremap <silent> <ESC>0 <Cmd>BufferLast<CR>
+else
+  nnoremap <silent> <A-,> <Cmd>BufferPrevious<CR>
+  nnoremap <silent> <A-.> <Cmd>BufferNext<CR>
+  nnoremap <silent> <A-c> <Cmd>BufferClose<CR>
+  nnoremap <silent> <A-<> <Cmd>BufferMovePrevious<CR>
+  nnoremap <silent> <A->> <Cmd>BufferMoveNext<CR>
+  nnoremap <silent> <A-1> <Cmd>BufferGoto 1<CR>
+  nnoremap <silent> <A-2> <Cmd>BufferGoto 2<CR>
+  nnoremap <silent> <A-3> <Cmd>BufferGoto 3<CR>
+  nnoremap <silent> <A-4> <Cmd>BufferGoto 4<CR>
+  nnoremap <silent> <A-5> <Cmd>BufferGoto 5<CR>
+  nnoremap <silent> <A-6> <Cmd>BufferGoto 6<CR>
+  nnoremap <silent> <A-7> <Cmd>BufferGoto 7<CR>
+  nnoremap <silent> <A-8> <Cmd>BufferGoto 8<CR>
+  nnoremap <silent> <A-9> <Cmd>BufferGoto 9<CR>
+  nnoremap <silent> <A-0> <Cmd>BufferLast<CR>
+endif
 
 "" gitsigns
 nmap <leader>hp :Gitsigns preview_hunk<CR>
