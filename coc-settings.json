@@ -12,5 +12,13 @@
   "coc.preferences.bracketEnterImprove": true,
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "coc.preferences.formatOnType": true,
-  "coc.preferences.willSaveHandlerTimeout": 3000
+  "coc.preferences.willSaveHandlerTimeout": 3000,
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["hcl", "terraform", "tf"],
+      "initializationOptions": {}
+    }
+  }
 }

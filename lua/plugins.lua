@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
   use 'dyng/ctrlsf.vim'
   use 'mg979/vim-visual-multi'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'jvirtanen/vim-hcl'
   use {
     'lewis6991/gitsigns.nvim',
     tag = 'release',
