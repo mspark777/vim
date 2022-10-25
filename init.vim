@@ -40,14 +40,10 @@ set termguicolors
 syntax on
 filetype plugin indent on
 
+autocmd Filetype make setlocal noexpandtab
 
 "" bultin json
 let g:vim_json_conceal = 0
-
-autocmd Filetype make setlocal noexpandtab
-
-lua require('plugins')
-
 
 "" barbar
 if has('macunix')
@@ -109,4 +105,5 @@ let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlsf_default_view_mode = 'compact'
 nmap <leader><C-P> <Plug>CtrlSFPrompt
 
+lua require('plugins')
 source ~/.config/nvim/coc.vim
