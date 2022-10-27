@@ -10,14 +10,14 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python", "hcl"],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "terraform"],
   "coc.preferences.formatOnType": true,
   "coc.preferences.willSaveHandlerTimeout": 3000,
   "languageserver": {
     "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],
-      "filetypes": ["hcl", "terraform", "tf"],
+      "filetypes": ["terraform", "tf"],
       "initializationOptions": {}
     }
   }
