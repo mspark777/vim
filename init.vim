@@ -105,5 +105,11 @@ let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlsf_default_view_mode = 'compact'
 nmap <leader><C-P> <Plug>CtrlSFPrompt
 
+"" packer
+augroup packer_user_config
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+augroup end
+
 lua require('plugins')
 source ~/.config/nvim/coc.vim
