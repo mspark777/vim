@@ -1,23 +1,27 @@
 {
   "codeLens.enable": true,
   "eslint.autoFixOnSave": true,
-  "tsserver.enableJavascript": true,
-  "typescript.referencesCodeLens.enable": false,
-  "javascript.referencesCodeLens.enable": false,
-  "typescript.implementationsCodeLens.enable": false,
-  "javascript.implementationsCodeLens.enable": false,
+  "typescript.referencesCodeLens.enabled": false,
+  "javascript.referencesCodeLens.enabled": false,
+  "javascript.implementationsCodeLens.enabled": false,
+  "typescript.implementationsCodeLens.enabled": false,
   "rust-analyzer.lens.implementations.enable": false,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python", "terraform"],
+  "coc.preferences.formatOnSave": true,
   "coc.preferences.formatOnType": true,
   "coc.preferences.willSaveHandlerTimeout": 3000,
   "languageserver": {
     "terraform": {
       "command": "terraform-ls",
-      "args": ["serve"],
-      "filetypes": ["terraform", "tf"],
+      "args": [
+        "serve"
+      ],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
       "initializationOptions": {}
     }
   }
