@@ -27,11 +27,14 @@ return require('packer').startup(function(use)
   use 'joukevandermaas/vim-ember-hbs'
   use 'fatih/vim-go'
   use 'vim-python/python-syntax'
-  use 'ctrlpvim/ctrlp.vim'
-  use 'dyng/ctrlsf.vim'
   use 'mg979/vim-visual-multi'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'hashivim/vim-terraform'
+  use "nvim-lua/plenary.nvim"
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
   use {
     'lewis6991/gitsigns.nvim',
     tag = 'release',

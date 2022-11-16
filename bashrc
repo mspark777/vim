@@ -11,3 +11,4 @@ function lvim {
 }
 
 alias pbcopy='xclip -sel clip'
+source ~/.config/nvim/fzf-git.sh/fzf-git.sh

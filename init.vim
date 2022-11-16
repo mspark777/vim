@@ -80,6 +80,12 @@ else
   nnoremap <silent> <A-0> <Cmd>BufferLast<CR>
 endif
 
+"" telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 "" gitsigns
 nmap <leader>hp :Gitsigns preview_hunk<CR>
 
@@ -90,10 +96,8 @@ let g:vim_jsx_pretty_highlight_close_tag =1
 "" javascript
 let g:javascript_plugin_jsdoc = 1
 
-
 "" rust
 let g:rustfmt_autosave = 1
-
 
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
