@@ -17,8 +17,10 @@ coc: clean_coc
 	nvim -R -c 'CocInstall -sync coc-tsserver coc-rust-analyzer coc-go coc-pyright coc-sumneko-lua coc-sh|qa!'
 	nvim -R -c 'CocInstall -sync @yaegassy/coc-tailwindcss3 coc-css coc-git coc-html coc-json coc-yaml coc-eslint coc-docker coc-swagger coc-svg coc-toml|qa!'
 
-fzfgit: clean_fzfgit
-	git clone https://github.com/junegunn/fzf-git.sh.git
+fzfgit:
+	-[ ! -d "fzf-git.sh" ] && git clone https://github.com/junegunn/fzf-git.sh.git
+	cd fzf-git.sh && git pull
+
 
 clean_packages:
 	rm -rf $(PACKDIR)
