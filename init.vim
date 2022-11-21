@@ -116,4 +116,6 @@ augroup packer_user_config
 augroup end
 
 lua require('plugins')
+
+let g:coc_global_extensions = ['coc-tsserver', 'coc-rust-analyzer', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', '@yaegassy/coc-tailwindcss3', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml']
 source ~/.config/nvim/coc.vim

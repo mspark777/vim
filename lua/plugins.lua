@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
     config = setup('nvim-tree')
   }
 
+
   if packer_bootstrap then
     require('packer').sync()
   end

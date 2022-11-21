@@ -12,6 +12,7 @@
   "coc.preferences.formatOnSave": true,
   "coc.preferences.formatOnType": true,
   "coc.preferences.willSaveHandlerTimeout": 3000,
+  "coc.preferences.extensionUpdateCheck" : "daily",
   "languageserver": {
     "terraform": {
       "command": "terraform-ls",
