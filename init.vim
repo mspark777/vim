@@ -102,13 +102,6 @@ let g:rustfmt_autosave = 1
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 
-"" ctrlp
-let g:ctrlp_custom_ignore = 'node_modules'
-
-"" ctrlsf
-let g:ctrlsf_default_view_mode = 'compact'
-nmap <leader><C-P> <Plug>CtrlSFPrompt
-
 "" packer
 augroup packer_user_config
   autocmd!
