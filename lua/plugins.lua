@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim'
   use 'hashivim/vim-terraform'
   use "nvim-lua/plenary.nvim"
+  use "pantharshit00/vim-prisma"
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { { 'nvim-lua/plenary.nvim' } }
