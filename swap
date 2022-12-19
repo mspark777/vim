@@ -1,5 +1,5 @@
 sudo swapoff -a
-sudo sudo dd if=/dev/zero of=/swapfile bs=1G count=16
+sudo dd if=/dev/zero of=/swapfile bs=1G count=16
 sudo chmod 0600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
