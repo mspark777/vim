@@ -20,17 +20,10 @@ end
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'pangloss/vim-javascript'
-  use 'leafgarland/typescript-vim'
-  use 'MaxMEllon/vim-jsx-pretty'
-  use 'rust-lang/rust.vim'
-  use 'joukevandermaas/vim-ember-hbs'
-  use 'fatih/vim-go'
-  use 'vim-python/python-syntax'
   use 'mg979/vim-visual-multi'
   use 'lukas-reineke/indent-blankline.nvim'
-  use 'hashivim/vim-terraform'
   use "nvim-lua/plenary.nvim"
+  use "sheerun/vim-polyglot"
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { { 'nvim-lua/plenary.nvim' } }
