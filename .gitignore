@@ -1,4 +1,5 @@
 .vscode
+elixir-ls
 plugin/packer_compiled.lua
 .luarc.json
 nerd-fonts
