@@ -6,6 +6,7 @@
   "javascript.implementationsCodeLens.enabled": false,
   "typescript.implementationsCodeLens.enabled": false,
   "rust-analyzer.lens.implementations.enable": false,
+  "solargraph.formatting": true,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
