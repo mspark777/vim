@@ -9,6 +9,7 @@ My nvim configure.
 1. brew install ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
+1. Install languages (KERL_BUILD_DOCS=yes KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" asdf install erlang 24.2)
 1. make fonts
 1. make fzfgit
 1. nvim
@@ -20,6 +21,7 @@ My nvim configure.
 1. apt install xclip ack, fzf, ripgrep
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
+1. Install languages (KERL_BUILD_DOCS=yes asdf install erlang 24.2)
 1. make fonts
 1. make fzfgit
 1. nvim
