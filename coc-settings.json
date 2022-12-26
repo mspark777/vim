@@ -9,6 +9,8 @@
   "solargraph.formatting": true,
   "solargraph.autoformat": true,
   "solargraph.useBundler": true,
+  "solargraph.commandPath": "~/.asdf/shims/solargraph",
+  "solargraph.bundlerPath": "~/.asdf/shims/bundle",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
