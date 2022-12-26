@@ -7,6 +7,8 @@
   "typescript.implementationsCodeLens.enabled": false,
   "rust-analyzer.lens.implementations.enable": false,
   "solargraph.formatting": true,
+  "solargraph.autoformat": true,
+  "solargraph.useBundler": true,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.asdf/shims/black",
   "coc.preferences.bracketEnterImprove": true,
