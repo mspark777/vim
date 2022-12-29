@@ -29,7 +29,7 @@ My nvim configure.
 
 ### Gitconfig
 ```sh
-git config user.name 'minsoo.park'
+git config user.name 'mspark777'
 git config user.email 'topangel777@gmail.com'
 git config --global core.editor vim
 git config --global push.default simple
