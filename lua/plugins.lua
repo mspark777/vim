@@ -18,19 +18,20 @@ local setup = function(name)
   return string.format('require("setup/%s")', name)
 end
 
-return require('packer').startup(function(use)
+local packer = require('packer')
+
+return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'mg979/vim-visual-multi'
   use 'lukas-reineke/indent-blankline.nvim'
   use "nvim-lua/plenary.nvim"
   use "sheerun/vim-polyglot"
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use {
     'lewis6991/gitsigns.nvim',
-    tag = 'release',
     config = setup('gitsigns')
   }
   use {
@@ -59,7 +60,6 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = setup('nvim-tree')
   }
-
 
   if packer_bootstrap then
     require('packer').sync()

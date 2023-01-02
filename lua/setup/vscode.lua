@@ -1,1 +1,1 @@
-require('vscode').setup({})
+require('vscode').setup {}
