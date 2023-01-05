@@ -89,13 +89,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 "" gitsigns
 nmap <leader>hp :Gitsigns preview_hunk<CR>
 
-"" typescript
-let g:vim_jsx_pretty_colorful_config = 1
-let g:vim_jsx_pretty_highlight_close_tag =1
-
-"" javascript
-let g:javascript_plugin_jsdoc = 1
-
 "" rust
 let g:rustfmt_autosave = 1
 

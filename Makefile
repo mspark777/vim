@@ -14,3 +14,9 @@ exls:
 	wget https://github.com/elixir-lsp/elixir-ls/releases/download/v0.12.0/elixir-ls.zip
 	unzip elixir-ls.zip -d elixir-ls
 	rm elixir-ls.zip
+
+nvim:
+	wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
+	sudo apt update
+	sudo apt install ./nvim-linux64.deb
+	rm ./nvim-linux64.deb
