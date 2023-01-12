@@ -1,7 +1,7 @@
 {
   "codeLens.enable": true,
   "eslint.autoFixOnSave": true,
-  "eslint.format.enable": true
+  "eslint.format.enable": true,
   "typescript.referencesCodeLens.enabled": false,
   "javascript.referencesCodeLens.enabled": false,
   "javascript.implementationsCodeLens.enabled": false,
