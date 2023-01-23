@@ -25,8 +25,8 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'mg979/vim-visual-multi'
   use 'lukas-reineke/indent-blankline.nvim'
-  use "nvim-lua/plenary.nvim"
-  use "sheerun/vim-polyglot"
+  use 'nvim-lua/plenary.nvim'
+  use 'sheerun/vim-polyglot'
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
