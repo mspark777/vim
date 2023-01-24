@@ -27,6 +27,11 @@ return packer.startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'sheerun/vim-polyglot'
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui",
+    requires = { "mfussenegger/nvim-dap" },
+    config = setup('dapui')
+  }
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',

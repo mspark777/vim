@@ -4,3 +4,4 @@ plugin/packer_compiled.lua
 .luarc.json
 nerd-fonts
 fzf-git.sh
+/vscode-node-debug2

@@ -52,32 +52,12 @@ if has('macunix')
   nnoremap <silent> <ESC>c <Cmd>BufferClose<CR>
   nnoremap <silent> <ESC>< <Cmd>BufferMovePrevious<CR>
   nnoremap <silent> <ESC>> <Cmd>BufferMoveNext<CR>
-  nnoremap <silent> <ESC>1 <Cmd>BufferGoto 1<CR>
-  nnoremap <silent> <ESC>2 <Cmd>BufferGoto 2<CR>
-  nnoremap <silent> <ESC>3 <Cmd>BufferGoto 3<CR>
-  nnoremap <silent> <ESC>4 <Cmd>BufferGoto 4<CR>
-  nnoremap <silent> <ESC>5 <Cmd>BufferGoto 5<CR>
-  nnoremap <silent> <ESC>6 <Cmd>BufferGoto 6<CR>
-  nnoremap <silent> <ESC>7 <Cmd>BufferGoto 7<CR>
-  nnoremap <silent> <ESC>8 <Cmd>BufferGoto 8<CR>
-  nnoremap <silent> <ESC>9 <Cmd>BufferGoto 9<CR>
-  nnoremap <silent> <ESC>0 <Cmd>BufferLast<CR>
 else
   nnoremap <silent> <A-,> <Cmd>BufferPrevious<CR>
   nnoremap <silent> <A-.> <Cmd>BufferNext<CR>
   nnoremap <silent> <A-c> <Cmd>BufferClose<CR>
   nnoremap <silent> <A-<> <Cmd>BufferMovePrevious<CR>
   nnoremap <silent> <A->> <Cmd>BufferMoveNext<CR>
-  nnoremap <silent> <A-1> <Cmd>BufferGoto 1<CR>
-  nnoremap <silent> <A-2> <Cmd>BufferGoto 2<CR>
-  nnoremap <silent> <A-3> <Cmd>BufferGoto 3<CR>
-  nnoremap <silent> <A-4> <Cmd>BufferGoto 4<CR>
-  nnoremap <silent> <A-5> <Cmd>BufferGoto 5<CR>
-  nnoremap <silent> <A-6> <Cmd>BufferGoto 6<CR>
-  nnoremap <silent> <A-7> <Cmd>BufferGoto 7<CR>
-  nnoremap <silent> <A-8> <Cmd>BufferGoto 8<CR>
-  nnoremap <silent> <A-9> <Cmd>BufferGoto 9<CR>
-  nnoremap <silent> <A-0> <Cmd>BufferLast<CR>
 endif
 
 "" telescope
@@ -95,6 +75,17 @@ let g:rustfmt_autosave = 1
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 
+"" dap
+nnoremap <silent> <Leader>dc <Cmd>lua require'dap'.continue()<CR>
+nnoremap <silent> <Leader>do <Cmd>lua require'dap'.step_over()<CR>
+nnoremap <silent> <Leader>di <Cmd>lua require'dap'.step_into()<CR>
+nnoremap <silent> <Leader>dt <Cmd>lua require'dap'.step_out()<CR>
+nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
+nnoremap <silent> <Leader>B <Cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
+nnoremap <silent> <Leader>lp <Cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
+nnoremap <silent> <Leader>dr <Cmd>lua require'dap'.repl.open()<CR>
+nnoremap <silent> <Leader>dl <Cmd>lua require'dap'.run_last()<CR>
+
 "" packer
 augroup packer_user_config
   autocmd!
@@ -104,4 +95,5 @@ augroup end
 let g:coc_global_extensions = ['coc-tsserver', 'coc-rust-analyzer', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', '@yaegassy/coc-tailwindcss3', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-solargraph']
 
 lua require('plugins')
+lua require('init/dap')
 source ~/.config/nvim/coc.vim

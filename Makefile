@@ -20,3 +20,7 @@ nvim:
 	sudo apt update
 	sudo apt install ./nvim-linux64.deb
 	rm ./nvim-linux64.deb
+
+nodedebug2:
+	-[ ! -d "vscode-node-debug2" ] && git clone https://github.com/microsoft/vscode-node-debug2.git
+	cd vscode-node-debug2 && git pull && npm ci && NODE_OPTIONS=--no-experimental-fetch npm run build
