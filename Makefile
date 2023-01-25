@@ -11,7 +11,7 @@ fzfgit:
 
 exls:
 	rm -rf elixir-ls
-	wget https://github.com/elixir-lsp/elixir-ls/releases/download/v0.12.0/elixir-ls.zip
+	wget https://github.com/elixir-lsp/elixir-ls/releases/download/v0.13.0/elixir-ls.zip
 	unzip elixir-ls.zip -d elixir-ls
 	rm elixir-ls.zip
 
