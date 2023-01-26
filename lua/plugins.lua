@@ -28,6 +28,7 @@ return packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'sheerun/vim-polyglot'
   use 'mfussenegger/nvim-dap'
+  use 'prisma/vim-prisma'
   use { "rcarriga/nvim-dap-ui",
     requires = { "mfussenegger/nvim-dap" },
     config = setup('dapui')
