@@ -2,8 +2,12 @@ help:
 	@cat Makefile
 
 fonts:
-	-[ ! -d "nerd-fonts" ] && git clone https://github.com/ryanoasis/nerd-fonts.git
-	cd nerd-fonts && git pull && ./install.sh
+	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip
+	unzip Hack.zip -d hack
+	mkdir -p ~/.local/share/fonts/nerdfonts
+	rm -rf ~/.local/share/fonts/nerdfonts/hack
+	mv hack ~/.local/share/fonts/nerdfonts/
+	rm Hack.zip
 
 fzfgit:
 	-[ ! -d "fzf-git.sh" ] && git clone https://github.com/junegunn/fzf-git.sh.git
