@@ -38,6 +38,11 @@ return packer.startup(function(use)
     config = setup('treesitter')
   }
   use {
+    "rest-nvim/rest.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+    config = setup('rest-nvim')
+  }
+  use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
     requires = { { 'nvim-lua/plenary.nvim' } }

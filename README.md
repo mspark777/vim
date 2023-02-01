@@ -5,7 +5,7 @@ My nvim configure.
 ## Install
 
 ### macOS
-1. brew, asdf, nvim, iterm2, fzf, ripgrep
+1. brew, asdf, nvim, iterm2, fzf, ripgrep, jq, tidy
 1. brew install ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
@@ -18,7 +18,7 @@ My nvim configure.
 
 ### Ubuntu
 1. asdf, nvim(https://github.com/neovim/neovim/releases)
-1. apt install xclip ack, fzf, ripgrep
+1. apt install xclip, ack, fzf, ripgrep, jq, tidy
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. Install languages (KERL_BUILD_DOCS=yes asdf install erlang 24.2)

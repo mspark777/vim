@@ -97,6 +97,11 @@ endfunction
 
 autocmd BufAdd,BufEnter,BufNew,BufNewFile,BufWinEnter * :call FoldConfig()
 
+
+"" rest-nvim
+nnoremap RN <Plug>RestNvim
+nnoremap RNP <Plug>RestNvimPreview
+
 "" packer
 augroup packer_user_config
   autocmd!
