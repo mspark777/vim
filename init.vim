@@ -36,6 +36,8 @@ set shortmess+=c
 set backspace=indent,eol,start
 set guicursor=
 set termguicolors
+set exrc
+set secure
 
 syntax on
 filetype plugin indent on

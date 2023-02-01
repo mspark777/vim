@@ -29,10 +29,6 @@ return packer.startup(function(use)
   use 'sheerun/vim-polyglot'
   use 'mfussenegger/nvim-dap'
   use 'prisma/vim-prisma'
-  use { "rcarriga/nvim-dap-ui",
-    requires = { "mfussenegger/nvim-dap" },
-    config = setup('dapui')
-  }
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
