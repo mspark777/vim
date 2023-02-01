@@ -38,6 +38,7 @@ set guicursor=
 set termguicolors
 set exrc
 set secure
+set nofoldenable
 
 syntax on
 filetype plugin indent on
@@ -87,6 +88,14 @@ nnoremap <silent> <Leader>B <Cmd>lua require'dap'.set_breakpoint(vim.fn.input('B
 nnoremap <silent> <Leader>lp <Cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
 nnoremap <silent> <Leader>dr <Cmd>lua require'dap'.repl.open()<CR>
 nnoremap <silent> <Leader>dl <Cmd>lua require'dap'.run_last()<CR>
+
+"" treesitter
+function FoldConfig()
+	set foldmethod=expr
+	set foldexpr=nvim_treesitter#foldexpr()
+endfunction
+
+autocmd BufAdd,BufEnter,BufNew,BufNewFile,BufWinEnter * :call FoldConfig()
 
 "" packer
 augroup packer_user_config

@@ -28,3 +28,10 @@ nvim:
 nodedebug2:
 	-[ ! -d "vscode-node-debug2" ] && git clone https://github.com/microsoft/vscode-node-debug2.git
 	cd vscode-node-debug2 && git pull && npm ci && NODE_OPTIONS=--no-experimental-fetch npm run build
+
+treesitter:
+	wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.20.7/tree-sitter-linux-x64.gz
+	gzip -d tree-sitter-linux-x64.gz
+	mkdir -p bin
+	mv tree-sitter-linux-x64 bin/tree-sitter
+	chmod +x bin/tree-sitter

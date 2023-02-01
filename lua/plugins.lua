@@ -30,6 +30,14 @@ return packer.startup(function(use)
   use 'mfussenegger/nvim-dap'
   use 'prisma/vim-prisma'
   use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+    config = setup('treesitter')
+  }
+  use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
     requires = { { 'nvim-lua/plenary.nvim' } }
