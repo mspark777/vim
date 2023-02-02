@@ -83,6 +83,7 @@ nnoremap <silent> <Leader>dc <Cmd>lua require'dap'.continue()<CR>
 nnoremap <silent> <Leader>do <Cmd>lua require'dap'.step_over()<CR>
 nnoremap <silent> <Leader>di <Cmd>lua require'dap'.step_into()<CR>
 nnoremap <silent> <Leader>dt <Cmd>lua require'dap'.step_out()<CR>
+nnoremap <silent> <Leader>dC <Cmd>lua require'dap'.clear_breakpoints()<CR>
 nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
 nnoremap <silent> <Leader>B <Cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
 nnoremap <silent> <Leader>lp <Cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
