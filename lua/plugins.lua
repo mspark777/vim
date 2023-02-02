@@ -43,9 +43,14 @@ return packer.startup(function(use)
     config = setup('rest-nvim')
   }
   use {
+    'theHamsta/nvim-dap-virtual-text',
+    requires = { 'mfussenegger/nvim-dap', 'nvim-treesitter/nvim-treesitter' },
+    config = setup('nvim-dap-virtual-text')
+  }
+  use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
-    requires = { { 'nvim-lua/plenary.nvim' } }
+    requires = { 'nvim-lua/plenary.nvim' }
   }
   use {
     'lewis6991/gitsigns.nvim',
