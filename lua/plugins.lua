@@ -71,6 +71,16 @@ return packer.startup(function(use)
       use 'sheerun/vim-polyglot'
       use 'mfussenegger/nvim-dap'
       use 'prisma/vim-prisma'
+      use {
+          "microsoft/vscode-js-debug",
+          opt = true,
+          run = "npm install --legacy-peer-deps && npm run compile"
+      }
+      use {
+          "mxsdev/nvim-dap-vscode-js",
+          requires = { "mfussenegger/nvim-dap", "microsoft/vscode-js-debug" },
+          config = setup('dap-vscode-js')
+      }
       use({
           "iamcco/markdown-preview.nvim",
           run = "cd app && npm install",
