@@ -2,6 +2,7 @@ vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
+
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -12,6 +13,47 @@ local ensure_packer = function()
   end
   return false
 end
+
+local function callback_vim_enter(data)
+  local fn = vim.fn
+  fn.sign_define('DapBreakpoint', {
+      text = "🟥",
+      texthl = "LspDiagnosticsSignError",
+      linehl = "",
+      numhl = "",
+  })
+
+  fn.sign_define('DapBreakpointRejected', {
+      text = "",
+      texthl = "LspDiagnosticsSignHint",
+      linehl = "",
+      numhl = "",
+  })
+
+  fn.sign_define('DapStopped', {
+      text = "⭐️",
+      texthl = "LspDiagnosticsSignInformation",
+      linehl = "DiagnosticUnderlineInfo",
+      numhl = "LspDiagnosticsSignInformation",
+  })
+
+  local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
+  local directory = vim.fn.isdirectory(data.file) == 1
+
+  if not no_name and not directory then
+    return
+  end
+
+  -- change to the directory
+  if directory then
+    vim.cmd.cd(data.file)
+  end
+
+  -- open the tree
+  require("nvim-tree.api").tree.open()
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = callback_vim_enter })
 
 local packer_bootstrap = ensure_packer()
 
