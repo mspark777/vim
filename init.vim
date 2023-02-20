@@ -90,15 +90,6 @@ nnoremap <silent> <Leader>lp <Cmd>lua require'dap'.set_breakpoint(nil, nil, vim.
 nnoremap <silent> <Leader>dr <Cmd>lua require'dap'.repl.open()<CR>
 nnoremap <silent> <Leader>dl <Cmd>lua require'dap'.run_last()<CR>
 
-"" treesitter
-function FoldConfig()
-	set foldmethod=expr
-	set foldexpr=nvim_treesitter#foldexpr()
-endfunction
-
-autocmd BufAdd,BufEnter,BufNew,BufNewFile,BufWinEnter * :call FoldConfig()
-
-
 "" rest-nvim
 nnoremap RN <Plug>RestNvim
 nnoremap RNP <Plug>RestNvimPreview
