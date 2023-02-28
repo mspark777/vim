@@ -29,7 +29,6 @@ require 'nvim-treesitter.configs'.setup {
     "prisma",
     "python",
     "regex",
-    "rust",
     "sql",
     "terraform",
     "toml",

@@ -72,9 +72,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 "" gitsigns
 nmap <leader>hp :Gitsigns preview_hunk<CR>
 
-"" rust
-let g:rustfmt_autosave = 1
-
 "" golang
 au filetype go set listchars=tab:\ \ ,trail:\ \,extends:»,precedes:«,eol:¬,nbsp:_
 
@@ -100,7 +97,7 @@ augroup packer_user_config
   autocmd BufWritePost plugins.lua source <afile> | PackerCompile
 augroup end
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-rust-analyzer', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-prisma']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-prisma']
 
 lua require('plugins')
 source ~/.config/nvim/coc.vim
