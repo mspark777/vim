@@ -1,3 +1,5 @@
+.PHONY: cpptools
+
 help:
 	@cat Makefile
 
@@ -25,3 +27,10 @@ treesitter:
 	mkdir -p bin
 	mv tree-sitter-linux-x64 bin/tree-sitter
 	chmod +x bin/tree-sitter
+
+cpptools:
+	rm -rf cpptools
+	wget https://github.com/microsoft/vscode-cpptools/releases/download/v1.14.4/cpptools-linux.vsix
+	unzip cpptools-linux.vsix -d cpptools
+	chmod +x cpptools/extension/debugAdapters/bin/OpenDebugAD7
+	rm cpptools-linux.vsix
