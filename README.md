@@ -14,6 +14,7 @@ My nvim configure.
 1. make fzfgit
 1. nvim
 1. PackerSync
+1. nvim :check
 
 
 ### Ubuntu
@@ -26,6 +27,7 @@ My nvim configure.
 1. make fzfgit
 1. nvim
 1. PackerSync
+1. nvim :check
 
 ### Gitconfig
 ```sh
