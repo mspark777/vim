@@ -25,6 +25,11 @@ My nvim configure.
 1. nvim
 1. nvim :check
 
+
+### WSL
+1. Ubuntu
+1. apt purge tmux && apt install tmux
+
 ### Gitconfig
 ```sh
 git config user.name 'mspark777'
