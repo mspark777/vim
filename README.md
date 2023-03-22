@@ -5,11 +5,11 @@ My nvim configure.
 ## Install
 
 ### macOS
-1. brew, asdf, nvim, iterm2, fzf, ripgrep, jq, tidy
+1. brew, asdf, nvim, iterm2, fzf, ripgrep, jq, tidy, fd
 1. brew install ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+1. pip install pynvim
 1. cd ~/.config/nvim
-1. Install languages (KERL_BUILD_DOCS=yes KERL_CONFIGURE_OPTIONS="--without-wx --without-javac" asdf install erlang 24.2)
 1. make fonts
 1. make fzfgit
 1. nvim
@@ -18,10 +18,10 @@ My nvim configure.
 
 ### Ubuntu
 1. asdf, nvim(https://github.com/neovim/neovim/releases)
-1. apt install xclip, ack, fzf, ripgrep, jq, tidy
+1. apt install xclip, ack, fzf, ripgrep, jq, tidy, fd-find
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+1. pip install pynvim
 1. cd ~/.config/nvim
-1. Install languages (KERL_BUILD_DOCS=yes asdf install erlang 24.2)
 1. make fonts
 1. make fzfgit
 1. nvim

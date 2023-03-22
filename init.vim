@@ -45,6 +45,19 @@ filetype plugin indent on
 
 autocmd Filetype make setlocal noexpandtab
 
+let g:clipboard = {
+  \   'name': 'WslClipboard',
+  \   'copy': {
+  \      '+': 'clip.exe',
+  \      '*': 'clip.exe',
+  \    },
+  \   'paste': {
+  \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+  \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+  \   },
+  \   'cache_enabled': 0,
+  \ }
+
 "" bultin json
 let g:vim_json_conceal = 0
 
@@ -97,7 +110,7 @@ augroup packer_user_config
   autocmd BufWritePost plugins.lua source <afile> | PackerCompile
 augroup end
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-prisma', 'coc-rust-analyzer']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-prisma', 'coc-rust-analyzer', 'coc-snippets']
 
 lua require('plugins')
 source ~/.config/nvim/coc.vim
