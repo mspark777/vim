@@ -8,25 +8,21 @@ My nvim configure.
 1. brew, asdf, nvim, iterm2, fzf, ripgrep, jq, tidy, fd
 1. brew install ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-1. pip install pynvim
 1. cd ~/.config/nvim
 1. make fonts
 1. make fzfgit
 1. nvim
-1. PackerSync
 1. nvim :check
 
 
 ### Ubuntu
-1. asdf, nvim(https://github.com/neovim/neovim/releases)
+1. asdf, nvim
 1. apt install xclip, ack, fzf, ripgrep, jq, tidy, fd-find
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-1. pip install pynvim
 1. cd ~/.config/nvim
 1. make fonts
 1. make fzfgit
 1. nvim
-1. PackerSync
 1. nvim :check
 
 ### Gitconfig
