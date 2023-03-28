@@ -70,7 +70,6 @@ return packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'sheerun/vim-polyglot'
   use 'mfussenegger/nvim-dap'
-  use 'prisma/vim-prisma'
   use {
     "microsoft/vscode-js-debug",
     opt = true,

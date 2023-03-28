@@ -24,7 +24,6 @@ require 'nvim-treesitter.configs'.setup {
     "make",
     "markdown",
     "markdown_inline",
-    "prisma",
     "python",
     "regex",
     "rust",
