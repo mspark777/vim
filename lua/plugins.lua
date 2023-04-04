@@ -71,6 +71,11 @@ return packer.startup(function(use)
   use 'sheerun/vim-polyglot'
   use 'mfussenegger/nvim-dap'
   use {
+    'barrett-ruth/import-cost.nvim',
+    run = 'sh install.sh npm',
+    config = setup('import-cost')
+  }
+  use {
     "microsoft/vscode-js-debug",
     opt = true,
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"

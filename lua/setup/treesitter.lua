@@ -13,7 +13,6 @@ require 'nvim-treesitter.configs'.setup {
     "gomod",
     "graphql",
     "hcl",
-    "help",
     "html",
     "http",
     "javascript",
@@ -33,6 +32,7 @@ require 'nvim-treesitter.configs'.setup {
     "tsx",
     "typescript",
     "vim",
+    "vimdoc",
     "yaml"
   },
   sync_install = true,
