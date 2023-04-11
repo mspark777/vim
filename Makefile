@@ -1,3 +1,5 @@
+.PHONY: bin
+
 help:
 	@cat Makefile
 
@@ -13,21 +15,27 @@ fzfgit:
 	-[ ! -d "fzf-git.sh" ] && git clone https://github.com/junegunn/fzf-git.sh.git
 	cd fzf-git.sh && git pull
 
-nvim:
-	wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
-	sudo apt update
-	sudo apt install ./nvim-linux64.deb
-	rm ./nvim-linux64.deb
+nvim: bin
+	wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+	rm -f bin/nvim
+	mv nvim.appimage bin/nvim
+	chmod +x bin/nvim
 
-treesitter:
+treesitter: bin
 	rm -f bin/tree-sitter
 	wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.20.8/tree-sitter-linux-x64.gz
 	gzip -d tree-sitter-linux-x64.gz
-	mkdir -p bin
 	mv tree-sitter-linux-x64 bin/tree-sitter
 	chmod +x bin/tree-sitter
+
+fuse:
+	sudo apt update
+	sudo apt install libfuse2
 
 clean:
 	rm -rf ~/.local/share/nvim/site/pack/packer
 	sudo rm -rf ~/.config/coc
 	rm -f plugin/packer_compiled.lua
+
+bin:
+	mkdir -p bin
