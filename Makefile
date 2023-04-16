@@ -28,10 +28,6 @@ treesitter: bin
 	mv tree-sitter-linux-x64 bin/tree-sitter
 	chmod +x bin/tree-sitter
 
-fuse:
-	sudo apt update
-	sudo apt install libfuse2
-
 clean:
 	rm -rf ~/.local/share/nvim/site/pack/packer
 	sudo rm -rf ~/.config/coc
