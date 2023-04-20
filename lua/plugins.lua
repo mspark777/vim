@@ -85,12 +85,12 @@ return packer.startup(function(use)
     requires = { "mfussenegger/nvim-dap", "microsoft/vscode-js-debug" },
     config = setup('dap-vscode-js')
   }
-  use({
+  use {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
     setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
     ft = { "markdown" },
-  })
+  }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
@@ -98,6 +98,10 @@ return packer.startup(function(use)
       ts_update()
     end,
     config = setup('treesitter')
+  }
+  use {
+    'theHamsta/nvim-dap-virtual-text',
+    config = setup('nvim-dap-virtual-text')
   }
   use {
     "rest-nvim/rest.nvim",
