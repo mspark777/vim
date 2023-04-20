@@ -16,7 +16,7 @@ My nvim configure.
 
 
 ### Ubuntu
-1. apt install build-essential, git, make, vim, vim-gtk3,  xclip, ack, fzf, ripgrep, jq, tidy, fd-find, libfuse2, g++-12
+1. apt install build-essential, git, make, vim, vim-gtk3,  xclip, ack, fzf, ripgrep, jq, tidy, fd-find, libfuse2
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
