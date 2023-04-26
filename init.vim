@@ -40,6 +40,10 @@ set exrc
 set secure
 set nofoldenable
 
+let g:loaded_ruby_provider = 0
+let g:loaded_node_provider = 0
+let g:loaded_perl_provider = 0
+
 syntax on
 filetype plugin indent on
 
