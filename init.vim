@@ -49,8 +49,6 @@ filetype plugin indent on
 
 autocmd Filetype make setlocal noexpandtab
 
-colorscheme rose-pine
-
 if has("wsl")
   let g:clipboard = {
     \   'name': 'WslClipboard',
