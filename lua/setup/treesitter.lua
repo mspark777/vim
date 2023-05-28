@@ -8,6 +8,7 @@ require 'nvim-treesitter.configs'.setup {
     "git_rebase",
     "gitattributes",
     "gitignore",
+    "gitcommit",
     "glimmer",
     "go",
     "gomod",
