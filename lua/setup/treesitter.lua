@@ -12,6 +12,7 @@ require 'nvim-treesitter.configs'.setup {
     "glimmer",
     "go",
     "gomod",
+    "gosum",
     "graphql",
     "hcl",
     "html",
