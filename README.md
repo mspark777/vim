@@ -28,6 +28,7 @@ My nvim configure.
 
 
 ### WSL
+1. Windows terminal
 1. Ubuntu
 1. apt purge tmux && apt install tmux
 
