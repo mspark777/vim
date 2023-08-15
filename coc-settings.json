@@ -13,9 +13,6 @@
   "coc.preferences.formatOnType": true,
   "coc.preferences.willSaveHandlerTimeout": 5000,
   "coc.preferences.extensionUpdateCheck": "daily",
-  "rust-analyzer.lens.implementations.enable": false,
-  "rust-analyzer.lens.run.enable": false,
-  "rust-analyzer.lens.debug.enable": false,
   "languageserver": {
     "terraform": {
       "command": "terraform-ls",
@@ -41,6 +38,5 @@
       ]
     }
   },
-  "snippets.ultisnips.pythonPrompt": false,
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd"
+  "snippets.ultisnips.pythonPrompt": false
 }

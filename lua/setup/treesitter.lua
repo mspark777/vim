@@ -27,7 +27,6 @@ require 'nvim-treesitter.configs'.setup {
     "markdown_inline",
     "python",
     "regex",
-    "rust",
     "sql",
     "terraform",
     "toml",
