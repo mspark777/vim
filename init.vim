@@ -33,7 +33,7 @@ set updatetime=300
 set signcolumn=yes
 set autoread
 set list
-set listchars=tab:•\ ,trail:•,extends:»,precedes:«,eol:¬,nbsp:_
+set listchars=tab:>-,trail:•,extends:»,precedes:«,eol:¬,nbsp:_
 set shortmess+=c
 set backspace=indent,eol,start
 set guicursor=
