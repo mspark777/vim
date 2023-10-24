@@ -1,6 +1,6 @@
 require('lualine').setup {
   options = {
-    theme = 'vscode'
+    theme = 'auto'
   },
   sections = {
     lualine_a = { 'mode' },

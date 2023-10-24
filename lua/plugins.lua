@@ -122,8 +122,9 @@ return packer.startup(function(use)
     branch = 'release'
   }
   use {
-    'Mofiqul/vscode.nvim',
-    config = setup('vscode')
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    config = setup('rose-pine')
   }
   use {
     'kyazdani42/nvim-web-devicons',

@@ -11,10 +11,6 @@ fonts:
 	mv hack ~/.local/share/fonts/nerdfonts/
 	rm Hack.zip
 
-fzfgit:
-	-[ ! -d "fzf-git.sh" ] && git clone https://github.com/junegunn/fzf-git.sh.git
-	cd fzf-git.sh && git pull
-
 nvim: bin
 	wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 	rm -f bin/nvim
