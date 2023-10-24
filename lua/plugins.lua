@@ -122,9 +122,8 @@ return packer.startup(function(use)
     branch = 'release'
   }
   use {
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = setup('rose-pine')
+    'folke/tokyonight.nvim',
+    config = setup('tokyonight')
   }
   use {
     'kyazdani42/nvim-web-devicons',
