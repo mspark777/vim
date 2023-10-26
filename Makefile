@@ -25,9 +25,10 @@ treesitter: bin
 	chmod +x bin/tree-sitter
 
 clean:
-	rm -rf ~/.local/share/nvim/site/pack/packer
+	rm -rf ~/.local/share/nvim/lazy
+	rm -rf ~/.local/state/nvim/lazy
+	rm -f ./lazy-lock.json
 	sudo rm -rf ~/.config/coc
-	rm -f plugin/packer_compiled.lua
 
 bin:
 	mkdir -p bin
