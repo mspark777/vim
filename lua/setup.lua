@@ -55,5 +55,4 @@ local function callback_vim_enter(data)
 end
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = callback_vim_enter })
-vim.g.mapleader = " "
 require("lazy").setup("plugins")
