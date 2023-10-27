@@ -1,6 +1,7 @@
 local function setup()
   require("dap-vscode-js").setup({
-    adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' },
+    debugger_path = vim.fn.expand("$HOME/.local/share/nvim/lazy/vscode-js-debug"),
+    adapters      = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' },
   })
 
   require('dap').configurations.typescript = {
