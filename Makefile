@@ -27,7 +27,6 @@ treesitter: bin
 clean:
 	rm -rf ~/.local/share/nvim/lazy
 	rm -rf ~/.local/state/nvim/lazy
-	rm -f ./lazy-lock.json
 	sudo rm -rf ~/.config/coc
 
 bin:
