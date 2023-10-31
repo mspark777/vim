@@ -39,11 +39,6 @@ local function config()
     desc = "Highlight symbol under cursor on CursorHold"
   })
 
-
-  keyset("n", "<leader>rn", "<Plug>(coc-rename)", { silent = true })
-  keyset("x", "<leader>f", "<Plug>(coc-format-selected)", { silent = true })
-  keyset("n", "<leader>f", "<Plug>(coc-format-selected)", { silent = true })
-
   vim.api.nvim_create_autocmd("FileType", {
     group = "CocGroup",
     pattern = "typescript,json",
@@ -62,36 +57,6 @@ local function config()
   opts = { silent = true, nowait = true }
   keyset("x", "<leader>a", "<Plug>(coc-codeaction-selected)", opts)
   keyset("n", "<leader>a", "<Plug>(coc-codeaction-selected)", opts)
-  keyset("n", "<leader>ac", "<Plug>(coc-codeaction-cursor)", opts)
-  keyset("n", "<leader>as", "<Plug>(coc-codeaction-source)", opts)
-  keyset("n", "<leader>qf", "<Plug>(coc-fix-current)", opts)
-  keyset("n", "<leader>re", "<Plug>(coc-codeaction-refactor)", { silent = true })
-  keyset("x", "<leader>r", "<Plug>(coc-codeaction-refactor-selected)", { silent = true })
-  keyset("n", "<leader>r", "<Plug>(coc-codeaction-refactor-selected)", { silent = true })
-  keyset("n", "<leader>cl", "<Plug>(coc-codelens-action)", opts)
-  keyset("x", "if", "<Plug>(coc-funcobj-i)", opts)
-  keyset("o", "if", "<Plug>(coc-funcobj-i)", opts)
-  keyset("x", "af", "<Plug>(coc-funcobj-a)", opts)
-  keyset("o", "af", "<Plug>(coc-funcobj-a)", opts)
-  keyset("x", "ic", "<Plug>(coc-classobj-i)", opts)
-  keyset("o", "ic", "<Plug>(coc-classobj-i)", opts)
-  keyset("x", "ac", "<Plug>(coc-classobj-a)", opts)
-  keyset("o", "ac", "<Plug>(coc-classobj-a)", opts)
-
-  opts = { silent = true, nowait = true, expr = true }
-  keyset("n", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
-  keyset("n", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
-  keyset("i", "<C-f>",
-    'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(1)<cr>" : "<Right>"', opts)
-  keyset("i", "<C-b>",
-    'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(0)<cr>" : "<Left>"', opts)
-  keyset("v", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
-  keyset("v", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
-
-
-  keyset("n", "<C-s>", "<Plug>(coc-range-select)", { silent = true })
-  keyset("x", "<C-s>", "<Plug>(coc-range-select)", { silent = true })
-
 
   vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
   vim.api.nvim_create_user_command("Fold", "call CocAction('fold', <f-args>)", { nargs = '?' })

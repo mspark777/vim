@@ -1,6 +1,6 @@
 return {
   "rest-nvim/rest.nvim",
-  requires = { "nvim-lua/plenary.nvim" },
+  dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
     require("rest-nvim").setup({
       result_split_horizontal = false,

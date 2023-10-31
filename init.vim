@@ -104,8 +104,8 @@ nnoremap <silent> <Leader>b <Cmd>lua require'dap'.toggle_breakpoint()<CR>
 nnoremap <silent> <Leader>dr <Cmd>lua require'dap'.repl.open()<CR>
 
 "" rest-nvim
-nnoremap RN <Plug>RestNvim
-nnoremap RNP <Plug>RestNvimPreview
+nnoremap <leader>rn <Plug>RestNvim
+nnoremap <leader>rp <Plug>RestNvimPreview
 
 let g:coc_global_extensions = ['coc-tsserver', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-snippets', 'coc-prettier', 'coc-clangd', '@yaegassy/coc-tailwindcss3']
 
