@@ -18,7 +18,6 @@ set cursorline
 set ruler
 set number
 set norelativenumber
-set lazyredraw
 set title
 set smartcase
 set incsearch
