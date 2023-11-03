@@ -32,4 +32,5 @@ TSInstall tsx
 TSInstall typescript
 TSInstall vim
 TSInstall vimdoc
-TSInstall yaml"
+TSInstall yaml
+TSInstall csv"
