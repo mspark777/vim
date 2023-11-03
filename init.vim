@@ -109,4 +109,3 @@ nnoremap <leader>RNP <Plug>RestNvimPreview
 let g:coc_global_extensions = ['coc-tsserver', 'coc-go', 'coc-pyright', 'coc-sumneko-lua', 'coc-sh', 'coc-css', 'coc-git', 'coc-html', 'coc-json', 'coc-yaml', 'coc-eslint', 'coc-docker', 'coc-swagger', 'coc-svg', 'coc-toml', 'coc-snippets', 'coc-prettier', 'coc-clangd', '@yaegassy/coc-tailwindcss3']
 
 lua require('setup')
-colorscheme tokyonight

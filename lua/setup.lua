@@ -2,8 +2,10 @@ vim.g.loaded_netrw       = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors    = true
 
+local firsttime = false
 local lazypath           = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
+  firsttime = true
   vim.fn.system({
     "git",
     "clone",
@@ -54,5 +56,8 @@ local function callback_vim_enter(data)
   require("nvim-tree.api").tree.open()
 end
 
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = callback_vim_enter })
 require("lazy").setup("plugins")
+if not firsttime then
+  vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = callback_vim_enter })
+  vim.cmd[[colorscheme tokyonight]]
+end

@@ -28,6 +28,7 @@ clean:
 	rm -rf ~/.local/share/nvim/lazy
 	rm -rf ~/.local/state/nvim/lazy
 	sudo rm -rf ~/.config/coc
+	rm -f ./lazy-lock.json
 
 bin:
 	mkdir -p bin
