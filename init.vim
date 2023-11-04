@@ -46,8 +46,8 @@ let g:loaded_ruby_provider = 0
 let g:loaded_node_provider = 0
 let g:loaded_perl_provider = 0
 
-syntax off
-filetype plugin indent off
+syntax on
+filetype plugin indent on
 
 autocmd Filetype make setlocal noexpandtab
 
