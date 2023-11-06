@@ -13,9 +13,5 @@ return {
         ignore = false
       }
     })
-
-    local keymap = vim.keymap
-    keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
-    keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
   end
 }
