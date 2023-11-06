@@ -27,7 +27,6 @@ treesitter: bin
 clean:
 	rm -rf ~/.local/share/nvim/lazy
 	rm -rf ~/.local/state/nvim/lazy
-	sudo rm -rf ~/.config/coc
 
 bin:
 	mkdir -p bin

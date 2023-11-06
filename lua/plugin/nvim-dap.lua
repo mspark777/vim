@@ -1,7 +1,8 @@
 return {
   "mfussenegger/nvim-dap",
   config = function()
-    require('dap').configurations.typescript = {
+    local dap = require('dap')
+    dap.configurations.typescript = {
       type = "pwa-node",
       request = "attach",
       name = "Attach",
@@ -29,5 +30,12 @@ return {
       linehl = "DiagnosticUnderlineInfo",
       numhl = "LspDiagnosticsSignInformation",
     })
+
+    local keymap = vim.keymap
+    local opts = {silent = true, noremap = true}
+    keymap.set("n", "<leader>dc", dap.continue, opts)
+    keymap.set("n", "<leader>dC", dap.clear_breakpoints, opts)
+    keymap.set("n", "<leader>b", dap.toggle_breakpoint, opts)
+    keymap.set("n", "<leader>dr", dap.repl.open, opts)
   end
 }

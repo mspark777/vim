@@ -1,4 +1,5 @@
 return {
   'barrett-ruth/import-cost.nvim',
-  build = 'sh install.sh npm'
+  build = 'sh install.sh npm',
+  opts = {}
 }
