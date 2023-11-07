@@ -21,7 +21,6 @@ return {
         graphql = { "prettier" },
         terraform = { "terraform_fmt" },
         python = { "black" },
-        ["*"] = { "codespell" },
         ["_"] = { "trim_whitespace" },
       },
       format_on_save = {
