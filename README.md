@@ -10,10 +10,10 @@ My nvim configure.
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. make fonts
-1. make fzfgit
 1. make treesitter
 1. make nvim
 1. nvim
+1. nvim :source ts.vim
 1. nvim :check
 
 
@@ -23,10 +23,10 @@ My nvim configure.
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. make fonts
-1. make fzfgit
 1. make treesitter
 1. make nvim
 1. nvim
+1. nvim :source ts.vim
 1. nvim :check
 
 
