@@ -93,3 +93,9 @@ keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_dia
 keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
 keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
 keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
+
+-- barbar
+opts = { silent = true, noremap = true }
+keymap.set('n', "<A-,>", '<Cmd>BufferPrevious<CR>', opts)
+keymap.set('n', "<A-.>", '<Cmd>BufferNext<CR>', opts)
+keymap.set('n', "<A-c>", '<Cmd>BufferClose<CR>', opts)
