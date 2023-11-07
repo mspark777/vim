@@ -14,6 +14,7 @@ My nvim configure.
 1. make nvim
 1. nvim
 1. nvim :source ts.vim
+1. nvim :source ls.vim
 1. nvim :check
 
 
@@ -27,6 +28,7 @@ My nvim configure.
 1. make nvim
 1. nvim
 1. nvim :source ts.vim
+1. nvim :source ls.vim
 1. nvim :check
 
 

@@ -8,25 +8,6 @@ return {
     mason.setup()
 
     local mason_lspconfig = require("mason-lspconfig")
-    mason_lspconfig.setup({
-      automatic_installation = true,
-      ensure_installed = {
-        "lua_ls",
-        "tsserver",
-        "gopls",
-        "pyright",
-        "bashls",
-        "cssls",
-        "html",
-        "jsonls",
-        "yamlls",
-        "eslint",
-        "dockerls",
-        "taplo",
-        "clangd",
-        "tailwindcss",
-        "graphql",
-      },
-    })
+    mason_lspconfig.setup({})
   end,
 }
