@@ -43,3 +43,7 @@ let g:loaded_perl_provider = 0
 let g:vim_json_conceal = 0
 autocmd Filetype make setlocal noexpandtab
 ]])
+
+vim.diagnostic.config({
+  virtual_text = false,
+})
