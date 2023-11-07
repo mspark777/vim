@@ -25,8 +25,8 @@ treesitter: bin
 	chmod +x bin/tree-sitter
 
 clean:
-	rm -rf ~/.local/share/nvim/lazy
-	rm -rf ~/.local/state/nvim/lazy
+	rm -rf ~/.local/share/nvim
+	rm -rf ~/.local/state/nvim
 
 bin:
 	mkdir -p bin
