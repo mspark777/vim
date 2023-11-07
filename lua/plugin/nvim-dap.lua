@@ -9,6 +9,5 @@ return {
       processId = require 'dap.utils'.pick_process,
       cwd = "${workspaceFolder}",
     }
-
   end
 }

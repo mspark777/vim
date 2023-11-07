@@ -55,7 +55,7 @@ vim.fn.sign_define('DapStopped', {
 })
 
 local dap = require('dap')
-local opts = {silent = true, noremap = true}
+local opts = { silent = true, noremap = true }
 keymap.set("n", "<leader>dc", dap.continue, opts)
 keymap.set("n", "<leader>dC", dap.clear_breakpoints, opts)
 keymap.set("n", "<leader>b", dap.toggle_breakpoint, opts)
@@ -67,7 +67,21 @@ keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
 
 -- telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+keymap.set('n', '<leader>ff', builtin.find_files, {})
+keymap.set('n', '<leader>fg', builtin.live_grep, {})
+keymap.set('n', '<leader>fb', builtin.buffers, {})
+keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- rest
+keymap.set('n', '<leader>hx', '<Plug>RestNvim')
+keymap.set('n', '<leader>hpx', '<Plug>RestNvimPreview')
+
+-- conform
+local conform = require("conform")
+keymap.set({ "n", "v" }, "<leader>mp", function()
+  conform.format({
+    lsp_fallback = true,
+    async = false,
+    timeout_ms = 500,
+  })
+end)
