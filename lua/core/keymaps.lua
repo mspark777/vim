@@ -11,18 +11,17 @@ vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
-    local opts = { buffer = ev.buf }
-    keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-    keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-    keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-    keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-    keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
-    keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
-    keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
-    keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+    keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration." })
+    keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition." })
+    keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = ev.buf, desc = "Show information." })
+    keymap.set('n', 'gi', vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go to implementation." })
+    keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { buf = ev.buf, desc = "Show help" })
+    keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, { buffer = ev.buf, desc = "Go to type definition." })
+    keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, { buffer = ev.buf, desc = "Code action." })
+    keymap.set('n', 'gr', vim.lsp.buf.references, { buffer = ev.buf, desc = "Go to reference." })
     keymap.set('n', '<space>f', function()
       vim.lsp.buf.format { async = true }
-    end, opts)
+    end, { buffer = ev.buf, desc = "Format." })
   end,
 })
 
@@ -49,11 +48,10 @@ vim.fn.sign_define('DapStopped', {
 })
 
 local dap = require('dap')
-local opts = { silent = true, noremap = true }
-keymap.set("n", "<leader>dc", dap.continue, opts)
-keymap.set("n", "<leader>dC", dap.clear_breakpoints, opts)
-keymap.set("n", "<leader>b", dap.toggle_breakpoint, opts)
-keymap.set("n", "<leader>dr", dap.repl.open, opts)
+keymap.set("n", "<leader>dc", dap.continue, { silent = true, noremap = true, desc = "Debug continue." })
+keymap.set("n", "<leader>dC", dap.clear_breakpoints, { silent = true, noremap = true, desc = "Clear breakpoints." })
+keymap.set("n", "<leader>b", dap.toggle_breakpoint, { silent = true, noremap = true, desc = "Set breakpoint." })
+keymap.set("n", "<leader>dr", dap.repl.open, { silent = true, noremap = true, desc = "Toggle debugger repl." })
 
 -- nvim-tree
 keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
@@ -61,10 +59,10 @@ keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
 
 -- telescope
 local builtin = require('telescope.builtin')
-keymap.set('n', '<leader>ff', builtin.find_files, {})
-keymap.set('n', '<leader>fg', builtin.live_grep, {})
-keymap.set('n', '<leader>fb', builtin.buffers, {})
-keymap.set('n', '<leader>fh', builtin.help_tags, {})
+keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find file." })
+keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Find text." })
+keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find buffer." })
+keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Find help." })
 
 -- rest
 keymap.set('n', '<leader>hx', '<Plug>RestNvim')
@@ -81,15 +79,13 @@ keymap.set({ "n", "v" }, "<leader>mp", function()
 end)
 
 -- trouble
-keymap.set("n", "<leader>xx", function() require("trouble").toggle() end)
-keymap.set("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
-keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
-keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
-keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
-keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
+keymap.set("n", "<leader>xx", function() require("trouble").toggle() end, { desc = "Toggle trouble." })
+keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end, { desc = "Trouble quickfix." })
+keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end, { desc = "Trouble loclist." })
+keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end, { desc = "Trouble lsp references." })
 
 -- barbar
-opts = { silent = true, noremap = true }
+local opts = { silent = true, noremap = true }
 keymap.set('n', "<A-,>", '<Cmd>BufferPrevious<CR>', opts)
 keymap.set('n', "<A-.>", '<Cmd>BufferNext<CR>', opts)
 keymap.set('n', "<A-c>", '<Cmd>BufferClose<CR>', opts)
