@@ -15,7 +15,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition." })
     keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = ev.buf, desc = "Show information." })
     keymap.set('n', 'gi', vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go to implementation." })
-    keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { buf = ev.buf, desc = "Show help" })
+    keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Show help" })
     keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, { buffer = ev.buf, desc = "Go to type definition." })
     keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, { buffer = ev.buf, desc = "Code action." })
     keymap.set('n', 'gr', vim.lsp.buf.references, { buffer = ev.buf, desc = "Go to reference." })
