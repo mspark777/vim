@@ -80,8 +80,8 @@ end)
 
 -- trouble
 keymap.set("n", "<leader>xx", function() require("trouble").toggle() end, { desc = "Toggle trouble." })
-keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end, { desc = "Trouble quickfix." })
-keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end, { desc = "Trouble loclist." })
+keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end,
+  { desc = "Toggle trouble current" })
 keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end, { desc = "Trouble lsp references." })
 
 -- barbar
