@@ -39,6 +39,6 @@
   "todo-comments.nvim": { "branch": "main", "commit": "4a6737a8d70fe1ac55c64dfa47fcb189ca431872" },
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
-  "vscode-js-debug": { "branch": "main", "commit": "14755d4dfdddc28b582217d3750c5553494e49f3" },
+  "vscode-js-debug": { "branch": "main", "commit": "729c105ed4d972fa4d3ca87a9a900f745b59f3c2" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
