@@ -46,10 +46,6 @@ return {
       capabilities = capabilities
     })
 
-    lspconfig.tailwindcss.setup({
-      capabilities = capabilities
-    })
-
     lspconfig.cssls.setup({
       capabilities = capabilities,
     })
