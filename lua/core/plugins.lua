@@ -1,5 +1,8 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+local first_time = false
 if not vim.loop.fs_stat(lazypath) then
+  first_time = true
   vim.fn.system({
     "git",
     "clone",
@@ -18,4 +21,10 @@ require("lazy").setup({
   { import = "dap" },
 })
 vim.cmd("colorscheme tokyonight")
+
+
+if first_time then
+  vim.cmd("source ts.vim")
+  vim.cmd("source ls.vim")
+end
 
