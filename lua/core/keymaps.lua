@@ -12,13 +12,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
     keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration." })
-    keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition." })
+    keymap.set('n', 'gd', "<cmd>Telescope lsp_definitions<CR>", { buffer = ev.buf, desc = "Go to definition." })
     keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = ev.buf, desc = "Show information." })
-    keymap.set('n', 'gi', vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go to implementation." })
+    keymap.set('n', 'gi', "<cmd>Telescope lsp_implementations<CR>", { buffer = ev.buf, desc = "Go to implementation." })
     keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Show help" })
     keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, { buffer = ev.buf, desc = "Go to type definition." })
     keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, { buffer = ev.buf, desc = "Code action." })
-    keymap.set('n', 'gr', vim.lsp.buf.references, { buffer = ev.buf, desc = "Go to reference." })
+    keymap.set('n', 'gr', "<cmd>Telescope lsp_references<CR>", { buffer = ev.buf, desc = "Go to reference." })
     keymap.set('n', '<space>f', function()
       vim.lsp.buf.format { async = true }
     end, { buffer = ev.buf, desc = "Format." })
