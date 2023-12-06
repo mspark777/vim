@@ -10,6 +10,8 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         go = { "gofmt" },
+        c = { "clang_format" },
+        cpp = { "clang_format" },
         javascript = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
