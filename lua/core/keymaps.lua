@@ -82,10 +82,39 @@ end)
 keymap.set("n", "<leader>xx", function() require("trouble").toggle() end, { desc = "Toggle trouble." })
 keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end,
   { desc = "Toggle trouble current" })
-keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end, { desc = "Trouble lsp references." })
 
 -- barbar
 local opts = { silent = true, noremap = true }
 keymap.set('n', "<A-,>", '<Cmd>BufferPrevious<CR>', opts)
 keymap.set('n', "<A-.>", '<Cmd>BufferNext<CR>', opts)
 keymap.set('n', "<A-c>", '<Cmd>BufferClose<CR>', opts)
+
+-- harpoon
+local function toggle_telescope(harpoon_files)
+  local conf = require("telescope.config").values
+  local file_paths = {}
+  for _, item in ipairs(harpoon_files.items) do
+    table.insert(file_paths, item.value)
+  end
+
+  require("telescope.pickers").new({}, {
+    prompt_title = "Harpoon",
+    finder = require("telescope.finders").new_table({
+      results = file_paths,
+    }),
+    previewer = conf.file_previewer({}),
+    sorter = conf.generic_sorter({}),
+  }):find()
+end
+
+local harpoon = require("harpoon")
+vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end)
+vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end, { desc = "Open harpoon window" })
+
+vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
+vim.keymap.set("n", "<C-t>", function() harpoon:list():select(2) end)
+vim.keymap.set("n", "<C-n>", function() harpoon:list():select(3) end)
+vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
+
+vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
+vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
