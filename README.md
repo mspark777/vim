@@ -5,7 +5,7 @@ My nvim configure.
 ## Install
 
 ### macOS
-1. brew, asdf, nvim, iterm2, fzf, ripgrep, jq, tidy, fd, bat
+1. brew, asdf, iterm2, fzf, ripgrep, jq, tidy, fd, bat
 1. brew install ack
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim

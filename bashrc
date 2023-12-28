@@ -11,6 +11,4 @@ function lvim {
 }
 
 alias pbcopy='xclip -sel clip'
-source ~/.config/nvim/fzf-git.sh/fzf-git.sh
 export PATH="${PATH}:${HOME}/.config/nvim/bin"
-export FLUTTER_ROOT="$(asdf where flutter)"
