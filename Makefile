@@ -4,7 +4,7 @@ help:
 	@cat Makefile
 
 fonts:
-	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
+	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
 	unzip Hack.zip -d hack
 	mkdir -p ~/.local/share/fonts/nerdfonts
 	rm -rf ~/.local/share/fonts/nerdfonts/hack
