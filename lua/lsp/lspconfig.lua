@@ -81,9 +81,5 @@ return {
     lspconfig.graphql.setup({
       capabilities = capabilities
     })
-
-    lspconfig.erlangls.setup({
-      capabilities = capabilities
-    })
   end
 }
