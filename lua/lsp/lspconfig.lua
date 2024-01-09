@@ -81,5 +81,9 @@ return {
     lspconfig.graphql.setup({
       capabilities = capabilities
     })
+
+    lspconfig.rust_analyzer.setup({
+      capabilities = capabilities
+    })
   end
 }
