@@ -1,1 +1,1 @@
-TSInstall! bash comment css diff dockerfile git_rebase gitattributes gitignore gitcommit glimmer go gomod gosum graphql hcl html http javascript jq jsdoc json jsonc lua make markdown markdown_inline python regex sql terraform toml tsx typescript vim vimdoc yaml csv cpp c xml ini
+TSInstall! bash comment css diff dockerfile git_rebase gitattributes gitignore gitcommit glimmer go gomod gosum graphql hcl html http javascript jq jsdoc json jsonc lua make markdown markdown_inline python regex sql terraform toml tsx typescript vim vimdoc yaml csv cpp c xml ini rust
