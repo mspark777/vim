@@ -85,9 +85,5 @@ return {
     lspconfig.rust_analyzer.setup({
       capabilities = capabilities
     })
-
-    lspconfig.gleam.setup({
-      capabilities = capabilities
-    })
   end
 }
