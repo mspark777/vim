@@ -6,3 +6,4 @@ neovim 0.9.5
 terraform-ls 0.32.4
 terraform 1.6.6
 tree-sitter 0.20.8
+lazygit 0.40.2
