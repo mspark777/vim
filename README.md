@@ -5,8 +5,8 @@ My nvim configure.
 ## Install
 
 ### macOS
-1. brew, asdf, iterm2, fzf, ripgrep, jq, tidy-html5, fd, bat, stats
-1. brew install ack
+1. brew, asdf, iterm2, fzf, ripgrep, jq, tidy-html5, fd, bat, stats, ack 
+1. nerdfonts - with brew
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. make fonts
