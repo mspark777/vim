@@ -18,7 +18,7 @@ opt.splitbelow = true
 opt.clipboard:append("unnamedplus")
 
 
-if vim.fn.has("wsl") then
+if vim.fn.has("wsl") == 1 then
   vim.cmd [[
 let g:clipboard = {
 \   'name': 'WslClipboard',
