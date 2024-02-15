@@ -11,6 +11,7 @@ My nvim configure.
 1. cd ~/.config/nvim
 1. nvim
 1. nvim :check
+1. on-my-zsh, powerlevel10k, iterm2-colorschme-tokyonight-storm, zsh-syntax-highlighting, zsh-autosuggestions
 
 
 ### Ubuntu
