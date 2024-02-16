@@ -2,7 +2,7 @@ return {
   'folke/tokyonight.nvim',
   priority = 1000,
   opts = {
-    style = "night",
+    style = "storm",
     light_style = "day"
   }
 }
