@@ -11,7 +11,8 @@ My nvim configure.
 1. cd ~/.config/nvim
 1. nvim
 1. nvim :check
-1. on-my-zsh, plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+1. iterm2 color-scheme tokyonight-storm
 
 
 ### Ubuntu
@@ -23,13 +24,14 @@ My nvim configure.
 1. make fonts
 1. nvim
 1. nvim :check
-1. on-my-zsh, plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+1. on-my-zsh, powerlevel10k, plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 
 ### WSL
 1. Windows terminal
 1. Ubuntu
 1. apt purge tmux && apt install tmux
+1. Windows terminal color tokyonight-storm
 
 ### Gitconfig
 ```sh
