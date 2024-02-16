@@ -15,13 +15,15 @@ My nvim configure.
 
 
 ### Ubuntu
-1. apt install build-essential, git, make, vim, vim-gtk3, xclip, ack, fzf, ripgrep, jq, tidy, fd-find, libfuse2, bat
+1. apt install build-essential git make vim-gtk3 xclip ack fzf ripgrep jq tidy fd-find libfuse2 bat zsh
+1. chsh -s $(which zsh)
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. make fonts
 1. nvim
 1. nvim :check
+1. on-my-zsh, plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 
 ### WSL
