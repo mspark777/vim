@@ -11,7 +11,7 @@ My nvim configure.
 1. cd ~/.config/nvim
 1. nvim
 1. nvim :check
-1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
 1. iterm2 color-scheme tokyonight-storm
 
 
@@ -24,7 +24,7 @@ My nvim configure.
 1. make fonts
 1. nvim
 1. nvim :check
-1. on-my-zsh, powerlevel10k, plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
 
 
 ### WSL
