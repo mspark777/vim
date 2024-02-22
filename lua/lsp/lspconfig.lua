@@ -81,5 +81,13 @@ return {
     lspconfig.graphql.setup({
       capabilities = capabilities
     })
+
+    lspconfig.docker_compose_language_service.setup({
+      capabilities = capabilities
+    })
+
+    lspconfig.jqls.setup({
+      capabilities = capabilities
+    })
   end
 }

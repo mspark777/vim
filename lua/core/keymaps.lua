@@ -1,5 +1,8 @@
 local keymap = vim.keymap
 
+-- telescope
+-- plugin/telescope.lua
+
 -- lsp
 keymap.set('n', '<space>e', vim.diagnostic.open_float)
 keymap.set('n', '[d', vim.diagnostic.goto_prev)
@@ -88,3 +91,9 @@ local opts = { silent = true, noremap = true }
 keymap.set('n', "<A-,>", '<Cmd>BufferPrevious<CR>', opts)
 keymap.set('n', "<A-.>", '<Cmd>BufferNext<CR>', opts)
 keymap.set('n', "<A-c>", '<Cmd>BufferClose<CR>', opts)
+
+
+-- auto-session
+vim.keymap.set("n", "<leader>ls", require("auto-session.session-lens").search_session, {
+  noremap = true,
+})
