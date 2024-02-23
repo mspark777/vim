@@ -8,3 +8,4 @@ terraform 1.6.6
 tree-sitter 0.20.8
 lazygit 0.40.2
 clang-format 17
+stylua 0.20.0

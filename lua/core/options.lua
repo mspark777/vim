@@ -17,9 +17,8 @@ opt.splitright = true
 opt.splitbelow = true
 opt.clipboard:append("unnamedplus")
 
-
 if vim.fn.has("wsl") == 1 then
-  vim.cmd [[
+	vim.cmd([[
 let g:clipboard = {
 \   'name': 'WslClipboard',
 \   'copy': {
@@ -32,11 +31,11 @@ let g:clipboard = {
 \   },
 \   'cache_enabled': 0,
 \ }
-  ]]
+  ]])
 end
 
-
 vim.cmd([[
+let g:loaded_python3_provider = 0
 let g:loaded_ruby_provider = 0
 let g:loaded_node_provider = 0
 let g:loaded_perl_provider = 0
@@ -45,5 +44,5 @@ autocmd Filetype make setlocal noexpandtab
 ]])
 
 vim.diagnostic.config({
-  virtual_text = false,
+	virtual_text = false,
 })
