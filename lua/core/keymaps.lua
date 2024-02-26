@@ -68,9 +68,8 @@ keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
 -- telescope
 local builtin = require("telescope.builtin")
 keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find file." })
-keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Find text." })
-keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find buffer." })
-keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find help." })
+keymap.set("n", "<leader>fl", builtin.live_grep, { desc = "Find text." })
+keymap.set("n", "<leader>fg", builtin.git_files, { desc = "Find git file." })
 
 -- rest
 keymap.set("n", "<leader>hx", "<Plug>RestNvim")
