@@ -1,10 +1,10 @@
 nodejs 20.11.0
 golang 1.18
 python 3.10.0
-awscli 2.15.3
+awscli 2.15.24
 neovim 0.9.5
-terraform-ls 0.32.4
-terraform 1.6.6
+terraform-ls 0.32.7
+terraform 1.7.4
 tree-sitter 0.20.9
 lazygit 0.40.2
 clang-format 17
