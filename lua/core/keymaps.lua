@@ -1,8 +1,5 @@
 local keymap = vim.keymap
 
--- telescope
--- plugin/telescope.lua
-
 -- lsp
 keymap.set("n", "<space>e", vim.diagnostic.open_float)
 keymap.set("n", "[d", vim.diagnostic.goto_prev)
@@ -66,6 +63,7 @@ keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
 
 -- telescope
+-- plugin/telescope.lua
 local builtin = require("telescope.builtin")
 keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find file." })
 keymap.set("n", "<leader>fl", builtin.live_grep, { desc = "Find text." })

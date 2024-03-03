@@ -33,7 +33,7 @@ My nvim configure.
 1. apt purge tmux && apt install tmux
 1. Windows terminal color tokyonight-storm
 
-### Version
+### Manually Version
 1. telecope.nvim
 
 ### Gitconfig
