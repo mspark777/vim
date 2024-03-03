@@ -33,6 +33,9 @@ My nvim configure.
 1. apt purge tmux && apt install tmux
 1. Windows terminal color tokyonight-storm
 
+### Version
+1. telecope.nvim
+
 ### Gitconfig
 ```sh
 git config user.name 'mspark777'
