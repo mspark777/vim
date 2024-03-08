@@ -1,6 +1,6 @@
 nodejs 20.11.0
 golang 1.18
-python 3.10.0
+python 3.11.8
 awscli 2.15.24
 neovim 0.9.5
 terraform-ls 0.32.7
