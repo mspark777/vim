@@ -7,5 +7,4 @@ terraform-ls 0.32.7
 terraform 1.7.4
 tree-sitter 0.20.9
 lazygit 0.40.2
-clang-format 17
 stylua 0.20.0
