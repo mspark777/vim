@@ -1,6 +1,6 @@
 return {
-  'petertriho/cmp-git',
-  dependencies = {
-    'nvim-lua/plenary.nvim'
-  }
+	"petertriho/cmp-git",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+	},
 }
