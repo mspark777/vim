@@ -8,7 +8,7 @@ My nvim configure.
 1. brew, asdf, iterm2, fzf, ripgrep, jq, tidy-html5, fd, bat, stats, ack, wget, tmux, zstd
 1. pip install pylint cpplint black
 1. nerdfonts, clang-format - with brew
-2. asdf
+1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. nvim
@@ -19,6 +19,7 @@ My nvim configure.
 
 ### Ubuntu
 1. apt install build-essential git make vim-gtk3 xclip ack fzf ripgrep jq tidy fd-find libfuse2 bat zsh zstd clang-format
+1. pip install pylint cpplint black
 1. chsh -s $(which zsh)
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
