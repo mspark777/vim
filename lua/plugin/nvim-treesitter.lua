@@ -47,6 +47,7 @@ return {
 				"ini",
 				"scss",
 				"ssh_config",
+				"tmux",
 			},
 			highlight = {
 				enable = true,
