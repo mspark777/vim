@@ -19,7 +19,7 @@ My nvim configure.
 
 ### Ubuntu
 1. apt install build-essential vim-gtk3
-2. brew git make xclip ack fzf ripgrep jq tidy-html5 fd libfuse bat zstd nerdfonts clang-format zsh
+2. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts clang-format zsh
 1. pip install pylint cpplint black
 1. chsh -s $(which zsh)
 1. asdf
