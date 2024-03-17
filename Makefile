@@ -1,5 +1,3 @@
-.PHONY: bin
-
 help:
 	@cat Makefile
 
@@ -9,6 +7,3 @@ clean:
 
 cleanall: clean
 	rm lazy-lock.json
-
-bin:
-	mkdir -p bin

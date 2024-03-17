@@ -15,6 +15,7 @@ return {
 			python = { "pylint" },
 			go = { "golangcilint" },
 			cpp = { "cpplint" },
+			c = { "cpplint" },
 		}
 	end,
 }
