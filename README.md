@@ -19,9 +19,9 @@ My nvim configure.
 
 ### Ubuntu
 1. apt install build-essential vim-gtk3
+1. chsh -s $(which zsh)
 2. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts clang-format zsh
 1. pip install pylint cpplint black
-1. chsh -s $(which zsh)
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
@@ -36,7 +36,7 @@ My nvim configure.
 1. apt purge tmux && apt install tmux
 1. Windows terminal color tokyonight-storm
 
-### Manually Version
+### Manually Version Control
 1. telecope.nvim
 
 ### Gitconfig
