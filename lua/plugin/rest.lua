@@ -1,4 +1,8 @@
 return {
 	"rest-nvim/rest.nvim",
-	dependencies = { "nvim-lua/plenary.nvim" },
+	ft = "http",
+	dependencies = { "luarocks.nvim" },
+	config = function()
+		require("rest-nvim").setup()
+	end,
 }
