@@ -70,8 +70,7 @@ keymap.set("n", "<leader>fl", builtin.live_grep, { desc = "Find text." })
 keymap.set("n", "<leader>fg", builtin.git_files, { desc = "Find git file." })
 
 -- rest
-keymap.set("n", "<leader>hx", "<Plug>RestNvim")
-keymap.set("n", "<leader>hpx", "<Plug>RestNvimPreview")
+keymap.set("n", "<leader>hx", "<cmd>Rest run<cr>")
 
 -- conform
 local conform = require("conform")

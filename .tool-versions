@@ -9,3 +9,4 @@ tree-sitter 0.20.9
 lazygit 0.40.2
 stylua 0.20.0
 golangci-lint 1.56.2
+lua 5.1.5
