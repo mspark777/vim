@@ -89,5 +89,9 @@ return {
 		lspconfig.jqls.setup({
 			capabilities = capabilities,
 		})
+
+		lspconfig.tailwindcss.setup({
+			capabilities = capabilities,
+		})
 	end,
 }

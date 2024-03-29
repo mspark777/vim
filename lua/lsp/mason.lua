@@ -27,6 +27,7 @@ return {
 				"sqlls",
 				"docker_compose_language_service",
 				"jqls",
+				"tailwindcss",
 			},
 		})
 	end,
