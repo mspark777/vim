@@ -28,6 +28,7 @@ return {
 				"docker_compose_language_service",
 				"jqls",
 				"tailwindcss",
+				"rust_analyzer",
 			},
 		})
 	end,

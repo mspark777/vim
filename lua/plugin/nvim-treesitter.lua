@@ -48,6 +48,7 @@ return {
 				"scss",
 				"ssh_config",
 				"tmux",
+				"rust",
 			},
 			highlight = {
 				enable = true,

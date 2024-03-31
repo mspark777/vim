@@ -24,6 +24,7 @@ return {
 				graphql = { "prettier" },
 				terraform = { "terraform_fmt" },
 				python = { "black" },
+				rust = { "rustfmt" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {
