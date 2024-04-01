@@ -30,6 +30,10 @@ return {
 			},
 		})
 
+		lspconfig.sqlls.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.tsserver.setup({
 			capabilities = capabilities,
 		})

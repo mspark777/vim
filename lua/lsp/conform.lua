@@ -22,6 +22,7 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				graphql = { "prettier" },
+				handlebars = { "prettier" },
 				terraform = { "terraform_fmt" },
 				python = { "black" },
 				rust = { "rustfmt" },

@@ -5,6 +5,7 @@ My nvim configure.
 ## Install
 
 ### macOS
+
 1. iterm2. stats
 1. brew fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts clang-format stylua tree-sitter golangci-lint lazygit neovim awscli
 1. pip install pylint cpplint black
@@ -16,11 +17,11 @@ My nvim configure.
 1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
 1. iterm2 color-scheme tokyonight-storm
 
-
 ### Ubuntu
+
 1. apt install build-essential vim-gtk3
 1. chsh -s $(which zsh)
-2. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts clang-format zsh stylua tree-sitter golangci-lint lazygit neovim awscli
+1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts clang-format zsh stylua tree-sitter golangci-lint lazygit neovim awscli
 1. pip install pylint cpplint black
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
@@ -29,17 +30,19 @@ My nvim configure.
 1. nvim :check
 1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
 
-
 ### WSL
+
 1. Windows terminal
 1. Ubuntu
 1. apt purge tmux && apt install tmux
 1. Windows terminal color tokyonight-storm
 
 ### Manually Version Control
+
 1. telecope.nvim
 
 ### Gitconfig
+
 ```sh
 git config user.name 'mspark777'
 git config user.email 'topangel777@gmail.com'
