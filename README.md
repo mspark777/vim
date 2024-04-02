@@ -7,7 +7,7 @@ My nvim configure.
 ### macOS
 
 1. iterm2. stats
-1. brew fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli clang-format stylua golangci-lint pylint cpplint black
+1. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
@@ -20,7 +20,7 @@ My nvim configure.
 
 1. apt install build-essential vim-gtk3
 1. chsh -s $(which zsh)
-1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts zsh tree-sitter lazygit neovim awscli clang-format stylua golangci-lint pylint cpplint black
+1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts zsh tree-sitter lazygit neovim awscli
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
