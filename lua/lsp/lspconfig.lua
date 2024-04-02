@@ -30,76 +30,31 @@ return {
 			},
 		})
 
-		lspconfig.sqlls.setup({
-			capabilities = capabilities,
-		})
+		local lsp_list = {
+			"tsserver",
+			"gopls",
+			"pyright",
+			"bashls",
+			"cssls",
+			"html",
+			"jsonls",
+			"yamlls",
+			"eslint",
+			"docker_compose_language_service",
+			"dockerls",
+			"taplo",
+			"clangd",
+			"graphql",
+			"sqlls",
+			"jqls",
+			"tailwindcss",
+			"rust_analyzer",
+		}
 
-		lspconfig.tsserver.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.gopls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.pyright.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.bashls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.cssls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.html.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.jsonls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.yamlls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.eslint.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.dockerls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.taplo.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.clangd.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.graphql.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.docker_compose_language_service.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.jqls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.tailwindcss.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.rust_analyzer.setup({
-			capabilities = capabilities,
-		})
+		for _, value in ipairs(lsp_list) do
+			lspconfig[value].setup({
+				capabilities = capabilities,
+			})
+		end
 	end,
 }
