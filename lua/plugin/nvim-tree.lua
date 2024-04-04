@@ -9,6 +9,9 @@ return {
 		vim.g.loaded_netrwPlugin = 1
 
 		nvimtree.setup({
+			view = {
+				number = true,
+			},
 			git = {
 				ignore = false,
 			},

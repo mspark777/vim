@@ -61,12 +61,14 @@ keymap.set("n", "<leader>dr", dap.repl.open, { silent = true, noremap = true, de
 -- nvim-tree
 keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
+keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
 
 -- telescope
 -- plugin/telescope.lua
 local builtin = require("telescope.builtin")
 keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find file." })
-keymap.set("n", "<leader>fl", builtin.live_grep, { desc = "Find text." })
+keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Find text." })
+keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Find string under cursor in cwd." })
 keymap.set("n", "<leader>fg", builtin.git_files, { desc = "Find git file." })
 
 -- rest

@@ -19,6 +19,10 @@ require("lazy").setup({
 	{ import = "plugin" },
 	{ import = "lsp" },
 	{ import = "dap" },
+}, {
+	change_detection = {
+		notify = false,
+	},
 })
 vim.cmd("colorscheme tokyonight")
 

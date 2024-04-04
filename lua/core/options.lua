@@ -15,6 +15,10 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.splitright = true
 opt.splitbelow = true
+opt.autoindent = true
+opt.wrap = false
+opt.smartcase = true
+opt.ignorecase = true
 opt.clipboard:append("unnamedplus")
 
 if vim.fn.has("wsl") == 1 then
