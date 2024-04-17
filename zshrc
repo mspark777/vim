@@ -1,0 +1,24 @@
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH}"
+source "$HOME/.cargo/env"
+source "$HOME/.asdf/asdf.sh"
+
+alias ll='ls -ahl'
+alias sshko='ssh -p 20742 gck@1.tcp.jp.ngrok.io'
+alias sshmtpdb='ssh ubuntu@13.125.68.251'
+alias sshmtpapi='ssh ubuntu@3.37.37.116'
+alias sshmtpscraper='ssh ubuntu@3.34.82.238'
+alias sshmtpmonitoring='ssh ubuntu@3.34.6.101'
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
+
+source $ZSH/oh-my-zsh.sh
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(fzf --zsh)"
