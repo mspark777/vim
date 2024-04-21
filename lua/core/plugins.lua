@@ -48,7 +48,7 @@ if first_time then
 		"jq-lsp",
 		"tailwindcss-language-server",
 		"rust-analyzer",
-		-- linter
+		-- Linter
 		"golangci-lint",
 		"pylint",
 		"cpplint",
