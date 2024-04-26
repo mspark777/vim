@@ -8,6 +8,7 @@ opt.swapfile = false
 opt.writebackup = false
 opt.cursorline = true
 opt.number = true
+opt.relativenumber = true
 opt.title = true
 opt.signcolumn = "yes"
 opt.list = true
