@@ -11,6 +11,7 @@ return {
 		nvimtree.setup({
 			view = {
 				number = true,
+				relativenumber = true,
 			},
 			git = {
 				ignore = false,
