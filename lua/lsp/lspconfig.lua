@@ -48,7 +48,6 @@ return {
 			"sqlls",
 			"jqls",
 			"tailwindcss",
-			"rust_analyzer",
 		}
 
 		for _, value in ipairs(lsp_list) do

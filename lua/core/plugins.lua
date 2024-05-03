@@ -15,7 +15,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ import = "color" },
 	{ import = "plugin" },
 	{ import = "lsp" },
 	{ import = "dap" },
@@ -47,7 +46,6 @@ if first_time then
 		"sqlls",
 		"jq-lsp",
 		"tailwindcss-language-server",
-		"rust-analyzer",
 		-- Linter
 		"golangci-lint",
 		"pylint",
