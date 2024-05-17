@@ -37,7 +37,7 @@ if first_time then
 		"html-lsp",
 		"json-lsp",
 		"yaml-language-server",
-		"eslint-lsp@4.8.0",
+		"eslint-lsp@4.8.0", -- https://github.com/microsoft/vscode-eslint/issues/1839
 		"docker-compose-language-service",
 		"dockerfile-language-server",
 		"taplo",
