@@ -1,7 +1,7 @@
 return {
 	"rest-nvim/rest.nvim",
-	ft = "http",
-	dependencies = { "luarocks.nvim" },
+	ft = { "http", "https" },
+	dependencies = { "luarocks" },
 	config = function()
 		require("rest-nvim").setup()
 	end,
