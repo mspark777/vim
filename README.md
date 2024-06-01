@@ -14,7 +14,7 @@ My nvim configure.
 1. nvim
 1. nvim :check
 1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
-1. iterm2 color-scheme tokyonight-storm
+1. iterm2 color-scheme tokyonight-night
 
 ### Ubuntu
 
@@ -33,7 +33,7 @@ My nvim configure.
 1. Windows terminal
 1. Ubuntu
 1. apt purge tmux && apt install tmux
-1. Windows terminal color tokyonight-storm
+1. Windows terminal color tokyonight-night
 
 ### Manually Version Control
 
