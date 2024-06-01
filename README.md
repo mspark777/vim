@@ -18,15 +18,14 @@ My nvim configure.
 
 ### Ubuntu
 
-1. apt install build-essential vim-gtk3
-1. chsh -s $(which zsh)
-1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts zsh tree-sitter lazygit neovim awscli
+1. apt install build-essential vim-gtk3 libcurl4-openssl-dev
+1. ln -s /usr/include/x86_64-linux-gnu/curl /usr/include/curl
+1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts zsh tree-sitter lazygit neovim awscli llvm
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. nvim
 1. nvim :check
-1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
 
 ### WSL
 
