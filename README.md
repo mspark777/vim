@@ -18,8 +18,7 @@ My nvim configure.
 
 ### Ubuntu
 
-1. apt install build-essential vim-gtk3 libcurl4-openssl-dev
-1. ln -s /usr/include/x86_64-linux-gnu/curl /usr/include/curl
+1. apt install build-essential vim-gtk3
 1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts zsh tree-sitter lazygit neovim awscli llvm
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim

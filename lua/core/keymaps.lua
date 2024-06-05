@@ -71,9 +71,6 @@ keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Find text." })
 keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Find string under cursor in cwd." })
 keymap.set("n", "<leader>fg", builtin.git_files, { desc = "Find git file." })
 
--- rest
-keymap.set("n", "<leader>hx", "<cmd>Rest run<cr>")
-
 -- conform
 local conform = require("conform")
 keymap.set({ "n", "v" }, "<leader>mp", function()
