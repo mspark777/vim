@@ -30,12 +30,13 @@ return {
 				["<C-e>"] = cmp.mapping.abort(),
 				["<CR>"] = cmp.mapping.confirm({ select = false }),
 			}),
+
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
+				{ name = "codeium" },
 				{ name = "luasnip" },
 			}, {
 				{ name = "buffer" },
-				{ name = "path" },
 			}),
 		})
 
