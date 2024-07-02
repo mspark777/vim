@@ -7,7 +7,7 @@ My nvim configure.
 ### macOS
 
 1. stats
-1. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli alacritty
+1. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli alacritty bash
 1. asdf, tmux plugins
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
