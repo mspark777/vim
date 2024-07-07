@@ -56,6 +56,7 @@ git config --global init.defaultBranch main
 1. apt update & upgrade
 1. brew update & upgrade
 1. asdf update & plugin update --all
+1. omz update
 1. make theme
 1. tmux prefix + U
 1. make cleanall & nvim
