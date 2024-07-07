@@ -50,3 +50,12 @@ git config --global pager.diff false
 git config --global diff.tool vimdiff
 git config --global init.defaultBranch main
 ```
+
+## Update
+
+1. apt update & upgrade
+1. brew update & upgrade
+1. asdf update & plugin update --all
+1. make theme
+1. tmux prefix + U
+1. make cleanall & nvim
