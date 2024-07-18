@@ -14,4 +14,4 @@ clean:
 	rm -rf ~/.local/state/nvim/*
 
 cleanall: clean
-	rm lazy-lock.json
+	rm -f lazy-lock.json
