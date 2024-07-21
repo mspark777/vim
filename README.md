@@ -19,7 +19,8 @@ My nvim configure.
 
 1. apt install build-essential vim-gtk3
 1. rust alacritty
-1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd nerdfonts tree-sitter lazygit neovim awscli llvm
+1. clone nerdfonts hack
+1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli llvm
 1. asdf, tmux plugins
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
