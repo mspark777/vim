@@ -17,11 +17,13 @@ My nvim configure.
 
 ### Ubuntu
 
-1. apt install build-essential vim-gtk3
-2. flathub, gnome-extenstion-manager, tophat
-1. clone nerdfonts hack
-1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli llvm wezterm
-1. asdf, tmux plugins
+1. apt install build-essential vim-gtk3 wezterm
+1. flathub, gnome-extenstion-manager, tophat
+1. make hack
+1. make tpm
+1. brew
+1. brew install git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli llvm tmux
+1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. nvim
@@ -49,7 +51,7 @@ git config --global pull.rebase false
 git config --global pager.branch false
 git config --global pager.config false
 git config --global pager.diff false
-git config --global diff.tool vimdiff
+git config --global diff.tool nvimdiff
 git config --global init.defaultBranch main
 ```
 
