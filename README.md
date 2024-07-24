@@ -18,6 +18,7 @@ My nvim configure.
 ### Ubuntu
 
 1. apt install build-essential vim-gtk3
+2. flathub, gnome-extenstion-manager, tophat
 1. clone nerdfonts hack
 1. brew git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli llvm wezterm
 1. asdf, tmux plugins
