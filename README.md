@@ -57,7 +57,8 @@ git config --global init.defaultBranch main
 
 ## Update
 
-1. apt update & upgrade
+1. sudo apt update & upgrade
+2. sudo flatpak update
 1. brew update & upgrade
 1. asdf update & plugin update --all
 1. omz update
