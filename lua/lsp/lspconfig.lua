@@ -16,7 +16,7 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 		local lsp_list = {
 			"lua_ls",
-			"tsserver",
+			"ts_ls",
 			"gopls",
 			"pyright",
 			"bashls",
