@@ -43,7 +43,6 @@ if first_time then
 		"docker-compose-language-service",
 		"dockerfile-language-server",
 		"taplo",
-		"clangd",
 		"graphql-language-service-cli",
 		"sqlls",
 		"jq-lsp",
@@ -53,7 +52,6 @@ if first_time then
 		"pylint",
 		"cpplint",
 		-- Formatter
-		"clang-format",
 		"stylua",
 		"black",
 		-- DAP

@@ -28,7 +28,6 @@ return {
 			"docker_compose_language_service",
 			"dockerls",
 			"taplo",
-			"clangd",
 			"graphql",
 			"sqlls",
 			"jqls",
