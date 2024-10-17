@@ -22,7 +22,7 @@ My nvim configure.
 1. make hack
 1. make tpm
 1. brew
-1. brew install git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli llvm tmux
+1. brew install git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
@@ -59,9 +59,9 @@ git config --global init.defaultBranch main
 
 1. sudo apt update & upgrade
 2. sudo flatpak update
-1. brew update & upgrade
-1. asdf update & plugin update --all
-1. omz update
-1. make hack
-1. tmux prefix + U
-1. make cleanall & nvim
+3. brew update & upgrade
+4. asdf update & plugin update --all
+5. omz update
+6. make hack
+7. tmux prefix + U
+8. make cleanall & nvim
