@@ -31,7 +31,7 @@ return {
 			"graphql",
 			"sqlls",
 			"jqls",
-			"rust-analyzer",
+			"rust_analyzer",
 			"tailwindcss",
 		}
 
