@@ -17,12 +17,12 @@ My nvim configure.
 
 ### Ubuntu
 
-1. apt install build-essential vim-gtk3 wezterm
+1. apt install build-essential vim-gtk3
 1. flathub, gnome-extenstion-manager, tophat
 1. make hack
 1. make tpm
 1. brew
-1. brew install git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux
+1. brew install git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux wezterm
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
