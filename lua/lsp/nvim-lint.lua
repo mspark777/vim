@@ -12,7 +12,6 @@ return {
 			typescript = { "eslint" },
 			javascriptreact = { "eslint" },
 			typescriptreact = { "eslint" },
-			python = { "pylint" },
 			go = { "golangcilint" },
 		}
 	end,

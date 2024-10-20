@@ -33,7 +33,6 @@ if first_time then
 		"lua-language-server",
 		"typescript-language-server",
 		"gopls",
-		"pyright",
 		"bash-language-server",
 		"css-lsp",
 		"html-lsp",
@@ -50,11 +49,8 @@ if first_time then
 		"rust-analyzer",
 		-- Linter
 		"golangci-lint",
-		"pylint",
-		"cpplint",
 		-- Formatter
 		"stylua",
-		"black",
 		-- DAP
 		"node-debug2-adapter",
 	}

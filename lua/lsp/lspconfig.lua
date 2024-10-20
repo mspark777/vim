@@ -18,7 +18,6 @@ return {
 			"lua_ls",
 			"ts_ls",
 			"gopls",
-			"pyright",
 			"bashls",
 			"cssls",
 			"html",

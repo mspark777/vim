@@ -23,7 +23,6 @@ return {
 				handlebars = { "prettier" },
 				svg = { "prettier" },
 				terraform = { "terraform_fmt" },
-				python = { "black" },
 				rust = { "rustfmt" },
 				["_"] = { "trim_whitespace" },
 			},
