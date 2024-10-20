@@ -17,8 +17,8 @@ My nvim configure.
 
 ### Ubuntu
 
-1. apt install build-essential vim-gtk3
-1. flathub, gnome-extenstion-manager, tophat
+1. apt install build-essential vim-gtk3 flatpak
+1. flatpak gnome-extenstion-manager, tophat
 1. make hack
 1. make tpm
 1. brew
