@@ -15,9 +15,10 @@ My nvim configure.
 1. nvim :check
 1. on-my-zsh, powerlevel10k. plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search ohmyzsh-full-autoupdate)
 
-### Ubuntu
+### Ubuntu or WSL
 
 1. apt install build-essential vim-gtk3 flatpak
+1. apt purge tmux
 1. flatpak wezterm gnome-extenstion-manager
 1. gnome-extenstion-manager tophat
 1. make hack
@@ -29,10 +30,6 @@ My nvim configure.
 1. cd ~/.config/nvim
 1. nvim
 1. nvim :check
-
-### WSL
-
-1. apt purge tmux && apt install tmux
 
 ### Manually Version Control
 

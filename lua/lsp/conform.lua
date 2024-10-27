@@ -22,7 +22,6 @@ return {
 				graphql = { "prettier" },
 				handlebars = { "prettier" },
 				svg = { "prettier" },
-				terraform = { "terraform_fmt" },
 				rust = { "rustfmt" },
 				["_"] = { "trim_whitespace" },
 			},
