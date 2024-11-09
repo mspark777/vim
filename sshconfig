@@ -1,17 +1,16 @@
 Host *
  IgnoreUnknown UseKeychain
 
-Host github.laroun
+Host github.com
  HostName github.com
  User git
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_ed25519_minsoo
 
-Host github.minsoo
+Host github.com
  HostName github.com
  User git
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_ed25519_minsoo
-

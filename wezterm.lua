@@ -1,12 +1,22 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+local config = {}
+config.wsl_domains = {
+	{
+		name = "WSL:Ubuntu",
+		distribution = "Ubuntu",
+	},
+}
+config.default_domain = "WSL:Ubuntu"
+
 config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 12
 
 config.color_scheme = "Tokyo Night"
 config.enable_tab_bar = false
-config.window_close_confirmation = 'NeverPrompt'
+config.window_close_confirmation = "NeverPrompt"
+config.audible_bell = "Disabled"
 
 config.mouse_bindings = {
 	{
