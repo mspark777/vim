@@ -33,7 +33,17 @@ My nvim configure.
 
 ### Manually Version Control
 
-1. telecope.nvim
+1. [telecope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+
+### Need to change a file name
+
+```
+sshconfig -> ${HOME}/.ssh/config
+.tool-versions -> ${HOME}/.tool-versions
+old.vimrc -> ${HOME}/.vimrc
+tmux.conf -> ${HOME}/.tmux.conf
+wezterm.lua -> ${HOME}/.wezterm.lua (It need to be at host OS home directory)
+```
 
 ### Gitconfig
 
