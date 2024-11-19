@@ -34,6 +34,7 @@ My nvim configure.
 ### Manually Version Control
 
 1. [telecope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+2. [wezterm](https://github.com/wez/wezterm)
 
 ### Need to change a file name
 
