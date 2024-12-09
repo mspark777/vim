@@ -70,4 +70,5 @@ git config --global init.defaultBranch main
 5. omz update
 6. make hack
 7. tmux prefix + U
-8. make cleanall & nvim
+8. rustup update
+9. make cleanall & nvim
