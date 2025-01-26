@@ -90,7 +90,9 @@ keymap.set("n", "<leader>xd", function()
 end, { desc = "Toggle trouble current" })
 
 -- barbar
-local opts = { silent = true, noremap = true }
-keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
-keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
-keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>", { silent = true, noremap = true })
+keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>", { silent = true, noremap = true })
+keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>", { silent = true, noremap = true })
+
+-- custom
+keymap.set("n", "<A-t>", "<Cmd>botright terminal<CR>", { silent = true, desc = "Open termianl" })
