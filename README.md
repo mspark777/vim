@@ -66,7 +66,7 @@ git config --global init.defaultBranch main
 1. sudo apt update & upgrade
 2. sudo flatpak update
 3. brew update & upgrade
-4. asdf update & plugin update --all
+4. cd .asdf && git pull && plugin update --all
 5. omz update
 6. make hack
 7. tmux prefix + U
