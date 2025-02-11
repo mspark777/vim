@@ -53,6 +53,7 @@ if first_time then
 		"stylua",
 		-- DAP
 		"node-debug2-adapter",
+		"codelldb",
 	}
 	vim.cmd("MasonInstall " .. table.concat(mason_packages, " "))
 end
