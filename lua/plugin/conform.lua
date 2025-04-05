@@ -23,6 +23,7 @@ return {
 				handlebars = { "prettier" },
 				svg = { "prettier" },
 				rust = { "rustfmt" },
+				python = { "black" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {

@@ -98,10 +98,13 @@ if first_time then
 		"jq-lsp",
 		"tailwindcss-language-server",
 		"rust-analyzer",
+		"pyright",
 		-- Linter
 		"golangci-lint",
+		"pylint",
 		-- Formatter
 		"stylua",
+		"black",
 		-- DAP
 		"node-debug2-adapter",
 		"codelldb",

@@ -46,6 +46,7 @@ return {
 				"ssh_config",
 				"tmux",
 				"rust",
+				"python",
 			},
 			highlight = {
 				enable = true,

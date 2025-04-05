@@ -32,6 +32,7 @@ return {
 			"jqls",
 			"rust_analyzer",
 			"tailwindcss",
+			"pyright",
 		}
 
 		for _, value in ipairs(lsp_list) do
