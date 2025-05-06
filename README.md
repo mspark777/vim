@@ -21,8 +21,6 @@ My nvim configure.
 1. apt purge tmux
 1. flatpak wezterm gnome-extenstion-manager
 1. gnome-extenstion-manager tophat
-1. make hack
-1. make tpm
 1. brew
 1. brew install git make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld
 1. asdf
@@ -31,10 +29,18 @@ My nvim configure.
 1. nvim
 1. nvim :check
 
+### Arch or WSL
+1. pacman -Syu
+1. pacman -S gvim sudo
+1. useradd -m mspark777 # [change default user](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL#Automated_installation)
+1. brew
+1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld
+1. asdf
+
 ### Manually Version Control
 
 1. [telecope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-2. [wezterm](https://github.com/wez/wezterm)
+1. [wezterm](https://github.com/wez/wezterm)
 
 ### Need to change a file name
 
@@ -64,11 +70,9 @@ git config --global init.defaultBranch main
 ## Update
 
 1. sudo apt update & upgrade
-2. sudo flatpak update
-3. brew update & upgrade
-4. asdf plugin update --all
-5. omz update
-6. make hack
-7. tmux prefix + U
-8. rustup update
-9. make cleanall & nvim
+1. brew update & upgrade
+1. asdf plugin update --all
+1. make hack
+1. tmux prefix + U
+1. rustup update
+1. make cleanall & nvim
