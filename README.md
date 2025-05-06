@@ -34,7 +34,7 @@ My nvim configure.
 1. pacman -S gvim sudo
 1. useradd -m mspark777 # [change default user](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL#Automated_installation)
 1. brew
-1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld
+1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld ssh
 1. asdf
 
 ### Manually Version Control
