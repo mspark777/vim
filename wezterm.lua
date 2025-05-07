@@ -4,11 +4,11 @@ local config = wezterm.config_builder()
 local config = {}
 config.wsl_domains = {
 	{
-		name = "WSL:Ubuntu",
-		distribution = "Ubuntu",
+		name = "WSL:Arch",
+		distribution = "archlinux",
 	},
 }
-config.default_domain = "WSL:Ubuntu"
+config.default_domain = "WSL:Arch"
 
 config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 12
