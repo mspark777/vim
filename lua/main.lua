@@ -114,8 +114,12 @@ end
 
 -- lsp
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
+vim.keymap.set("n", "[d", function()
+	vim.diagnostic.jump({ count = -1, float = true })
+end)
+vim.keymap.set("n", "]d", function()
+	vim.diagnostic.jump({ count = 1, float = true })
+end)
 vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -169,6 +173,7 @@ vim.fn.sign_define("DapStopped", {
 	numhl = "LspDiagnosticsSignInformation",
 })
 
+-- dap
 local dap = require("dap")
 vim.keymap.set("n", "<leader>dc", dap.continue, { silent = true, noremap = true, desc = "Debug continue." })
 vim.keymap.set("n", "<leader>dC", dap.clear_breakpoints, { silent = true, noremap = true, desc = "Clear breakpoints." })
@@ -181,7 +186,6 @@ vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
 vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
 
 -- telescope
--- plugin/telescope.lua
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find file." })
 vim.keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Find text." })
@@ -199,17 +203,32 @@ vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 end)
 
 -- trouble
-vim.keymap.set("n", "<leader>xx", function()
-	require("trouble").toggle()
-end, { desc = "Toggle trouble." })
-vim.keymap.set("n", "<leader>xd", function()
-	require("trouble").toggle("document_diagnostics")
-end, { desc = "Toggle trouble current" })
+vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
+vim.keymap.set(
+	"n",
+	"<leader>xX",
+	"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+	{ desc = "Buffer Diagnostics (Trouble)" }
+)
+vim.keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
+vim.keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
+vim.keymap.set("n", "<leader>cs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols (Trouble)" })
+vim.keymap.set(
+	"n",
+	"<leader>cl",
+	"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+	{ desc = "LSP Definitions / references / ... (Trouble)" }
+)
 
 -- barbar
 vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>", { silent = true, noremap = true })
+
+-- which-key
+vim.keymap.set("n", "<leader>?", function()
+	require("which-key").show({ global = false })
+end, { desc = "Buffer Local Keymaps (which-key)" })
 
 -- custom
 vim.keymap.set("n", "<A-t>", "<Cmd>botright terminal<CR>", { silent = true, desc = "Open termianl" })

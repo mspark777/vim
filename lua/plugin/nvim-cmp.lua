@@ -9,6 +9,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"petertriho/cmp-git",
+		"folke/lazydev.nvim",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -35,6 +36,7 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "codeium" },
 				{ name = "luasnip" },
+				{ name = "lazydev", group_index = 0 },
 			}, {
 				{ name = "buffer" },
 			}),

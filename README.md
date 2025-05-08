@@ -34,6 +34,8 @@ My nvim configure.
 
 1. [telecope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 1. [wezterm](https://github.com/wez/wezterm)
+1. [nvim-surround](https://github.com/kylechui/nvim-surround)
+1. [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 
 ### Need to change a file name
 
