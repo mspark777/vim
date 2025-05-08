@@ -105,6 +105,7 @@ if first_time then
 		-- Formatter
 		"stylua",
 		"black",
+		"sqlfmt",
 		-- DAP
 		"node-debug2-adapter",
 		"codelldb",

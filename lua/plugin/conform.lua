@@ -24,6 +24,7 @@ return {
 				svg = { "prettier" },
 				rust = { "rustfmt" },
 				python = { "black" },
+				sql = { "sqlfmt" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {
