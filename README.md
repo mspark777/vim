@@ -8,7 +8,7 @@ My nvim configure.
 
 1. stats
 1. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld
-1. asdf, tmux plugins, bash it
+1. asdf, tmux plugins
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 1. cd ~/.config/nvim
 1. nvim
@@ -20,7 +20,6 @@ My nvim configure.
 1. echo en_US.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
 1. pacman -S gvim sudo
 1. useradd -m mspark777 # [change default user](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL#Automated_installation)
-1. bash it
 1. brew
 1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld ssh less
 1. asdf
@@ -65,7 +64,6 @@ git config --global init.defaultBranch main
 
 1. sudo pacman -Syu
 1. brew update & upgrade
-1. bash-it update stable
 1. asdf plugin update --all
 1. make hack
 1. tmux prefix + U
