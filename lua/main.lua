@@ -231,5 +231,11 @@ vim.keymap.set("n", "<leader>?", function()
 	require("which-key").show({ global = false })
 end, { desc = "Buffer Local Keymaps (which-key)" })
 
+-- lazygit
+vim.keymap.set({ "n", "t" }, "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+
+-- lazydocker
+vim.keymap.set({ "n", "t" }, "<leader>ld", "<Cmd>lua LazyDocker.toggle()<CR>", { desc = "LazyDocker" })
+
 -- custom
 vim.keymap.set("n", "<A-t>", "<Cmd>botright terminal<CR>", { silent = true, desc = "Open termianl" })
