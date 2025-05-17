@@ -4,6 +4,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-fzf-native.nvim",
+		"rest-nvim/rest.nvim",
 	},
 	config = function()
 		local telescope = require("telescope")
@@ -23,5 +24,6 @@ return {
 		})
 
 		telescope.load_extension("fzf")
+		telescope.load_extension("rest")
 	end,
 }

@@ -2,7 +2,10 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	config = function()
 		require("nvim-treesitter.configs").setup({
+			modules = {},
+			ignore_install = {},
 			auto_install = true,
+			sync_install = true,
 			ensure_installed = {
 				"bash",
 				"comment",

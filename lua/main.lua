@@ -70,7 +70,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ import = "plugin" },
+	{ import = "plugins" },
 }, {
 	change_detection = {
 		notify = false,
@@ -236,6 +236,9 @@ vim.keymap.set({ "n", "t" }, "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit
 
 -- lazydocker
 vim.keymap.set({ "n", "t" }, "<leader>ld", "<Cmd>lua LazyDocker.toggle()<CR>", { desc = "LazyDocker" })
+
+-- rest
+vim.keymap.set("n", "<leader>lhr", "<Cmd>Rest run<CR>", { desc = "Rest run" })
 
 -- custom
 vim.keymap.set("n", "<A-t>", "<Cmd>botright terminal<CR>", { silent = true, desc = "Open termianl" })
