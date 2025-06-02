@@ -1,5 +1,4 @@
 local wezterm = require("wezterm")
-local config = wezterm.config_builder()
 
 local config = {}
 config.wsl_domains = {
