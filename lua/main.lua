@@ -238,7 +238,11 @@ vim.keymap.set({ "n", "t" }, "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit
 vim.keymap.set({ "n", "t" }, "<leader>ld", "<Cmd>lua LazyDocker.toggle()<CR>", { desc = "LazyDocker" })
 
 -- rest
-vim.keymap.set("n", "<leader>lhr", "<Cmd>Rest run<CR>", { desc = "Rest run" })
+vim.keymap.set("n", "<leader>lhcr", "<Cmd>Rest run<CR>", { desc = "Rest run" })
+vim.keymap.set("n", "<leader>lhr", function()
+	local name = vim.fn.input("name: ")
+	vim.cmd("Rest run " .. name)
+end, { desc = "Rest run {name}" })
 
 -- custom
 vim.keymap.set("n", "<A-t>", "<Cmd>botright terminal<CR>", { silent = true, desc = "Open termianl" })
