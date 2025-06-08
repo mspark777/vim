@@ -244,5 +244,8 @@ vim.keymap.set("n", "<leader>lhr", function()
 	vim.cmd("Rest run " .. name)
 end, { desc = "Rest run {name}" })
 
+-- markdown
+vim.keymap.set("n", "<leader>lmp", "<Cmd>MarkdownPreviewToggle<CR>", { desc = "Rest run" })
+
 -- custom
 vim.keymap.set("n", "<A-t>", "<Cmd>botright terminal<CR>", { silent = true, desc = "Open termianl" })
