@@ -17,7 +17,7 @@ My nvim configure.
 ### Arch or WSL
 
 1. echo en_US.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
-1. pacman -S gvim sudo
+1. pacman -S gvim sudo git
 1. ln -s /usr/bin/vim /usr/bin/vi
 1. pacman -Syu
 1. useradd -m mspark777 # [change default user](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL#Automated_installation)
