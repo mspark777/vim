@@ -45,6 +45,7 @@ sshconfig -> ${HOME}/.ssh/config
 old.vimrc -> ${HOME}/.vimrc
 tmux.conf -> ${HOME}/.tmux.conf
 wezterm.lua -> ${HOME}/.wezterm.lua (It need to be at host OS home directory)
+bashrc -> ${HOME}/.bashrc
 ```
 
 ### Gitconfig
