@@ -19,6 +19,7 @@ vim.opt.wrap = false
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 vim.opt.clipboard:append("unnamedplus")
+vim.opt.exrc = true
 
 if vim.fn.has("wsl") == 1 then
 	vim.cmd([[
