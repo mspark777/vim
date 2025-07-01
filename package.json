@@ -1,5 +1,22 @@
 {
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "@eslint/js": "^9.29.0",
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@types/node": "^22.15.34",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.20.3",
+    "typescript-eslint": "^8.34.0"
   }
 }
