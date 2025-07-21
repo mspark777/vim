@@ -1,3 +1,10 @@
+vim.g.editorconfig = false
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.vim_json_conceal = 0
+
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
@@ -37,12 +44,6 @@ let g:clipboard = {
 \ }
   ]])
 end
-
-vim.g.loaded_python3_provider = 0
-vim.g.loaded_ruby_provider = 0
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
-vim.g.vim_json_conceal = 0
 
 vim.cmd([[
 autocmd Filetype make setlocal noexpandtab
