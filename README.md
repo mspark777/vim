@@ -22,7 +22,7 @@ My nvim configure.
 1. pacman -Syu
 1. useradd -m mspark777 # [change default user](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL#Automated_installation)
 1. brew
-1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools
+1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
 1. oh-my-bash
 1. asdf
 1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
