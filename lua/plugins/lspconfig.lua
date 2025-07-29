@@ -11,7 +11,6 @@ return {
 	config = function()
 		require("neoconf").setup({})
 
-		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 		local lsp_list = {
@@ -36,7 +35,8 @@ return {
 		}
 
 		for _, value in ipairs(lsp_list) do
-			lspconfig[value].setup({
+			vim.lsp.enable(value)
+			vim.lsp.config(value, {
 				capabilities = capabilities,
 			})
 		end
