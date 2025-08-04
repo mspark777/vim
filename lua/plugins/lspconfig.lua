@@ -27,7 +27,7 @@ return {
 			"dockerls",
 			"taplo",
 			"graphql",
-			"sqlls",
+			"postgres_lsp",
 			"jqls",
 			"rust_analyzer",
 			"tailwindcss",
@@ -35,10 +35,10 @@ return {
 		}
 
 		for _, value in ipairs(lsp_list) do
-			vim.lsp.enable(value)
 			vim.lsp.config(value, {
 				capabilities = capabilities,
 			})
+			vim.lsp.enable(value)
 		end
 	end,
 }

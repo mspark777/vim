@@ -96,7 +96,7 @@ if first_time then
 		"dockerfile-language-server",
 		"taplo",
 		"graphql-language-service-cli",
-		"sqlls",
+		"postgrestools",
 		"jq-lsp",
 		"tailwindcss-language-server",
 		"rust-analyzer",
@@ -109,7 +109,7 @@ if first_time then
 		"black",
 		"sqlfmt",
 		-- DAP
-		"node-debug2-adapter",
+		"js-debug-adapter",
 		"codelldb",
 	}
 	vim.cmd("MasonInstall " .. table.concat(mason_packages, " "))
