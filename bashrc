@@ -13,6 +13,12 @@ then
   fi
 fi
 
+#rm -rf .git
+#git init
+#git remote add origin [your-remote-url]
+#git fetch
+#git reset --mixed origin/main
+
 export OSH='/home/mspark777/.oh-my-bash'
 
 OSH_THEME="powerbash10k"
