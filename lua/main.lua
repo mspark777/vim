@@ -4,6 +4,7 @@ vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.vim_json_conceal = 0
+vim.g.codeium_disable_bindings = 1
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
