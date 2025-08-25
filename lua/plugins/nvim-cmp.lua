@@ -34,7 +34,6 @@ return {
 
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
-				{ name = "codeium" },
 				{ name = "luasnip" },
 				{ name = "lazydev", group_index = 0 },
 			}, {
