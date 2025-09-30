@@ -25,6 +25,7 @@ return {
 				rust = { "rustfmt" },
 				python = { "black" },
 				sql = { "sqlfmt" },
+				toml = { "taplo" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {
