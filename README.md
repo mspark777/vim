@@ -14,7 +14,7 @@ My nvim configure.
 1. nvim
 1. nvim :check
 
-### Ubuntu or WSL
+### Ubuntu - WSL
 
 1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
 1. sudo apt update && upgrade
@@ -27,6 +27,10 @@ My nvim configure.
 1. make tpm
 1. nvim
 1. nvim :check
+
+### Ubuntu
+1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
+2. brew
 
 ### Manually Version Control
 
