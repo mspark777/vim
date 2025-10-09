@@ -32,18 +32,17 @@ My nvim configure.
 1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
 2. sudo apt install vim-gtk3
 3. brew
-4. wezterm
 5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
 6. oh-my-bash
 7. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 8. asdf
-9. make tpm
-10. nvim
-11. nvim :check
+9. make tpm hack
+11. nvim
+12. nvim :check
+13. apt wezterm
 
 ### Manually Version Control
 
-1. [WezTerm](https://github.com/wez/wezterm)
 1. [telecope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 1. [nvim-surround](https://github.com/kylechui/nvim-surround)
 1. [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
