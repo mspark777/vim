@@ -40,6 +40,7 @@ My nvim configure.
 11. nvim
 12. nvim :check
 13. apt wezterm
+14. flathub
 
 ### Manually Version Control
 
