@@ -7,30 +7,39 @@ My nvim configure.
 ### macOS
 
 1. stats
-1. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld
-1. asdf, tmux plugins
-1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-1. cd ~/.config/nvim
-1. nvim
-1. nvim :check
+2. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld
+3. asdf, tmux plugins
+4. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+5. cd ~/.config/nvim
+6. nvim
+7. nvim :check
 
 ### Ubuntu - WSL
 
 1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
-1. sudo apt update && upgrade
-1. sudo apt install vim-gtk3
-1. brew
-1. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
-1. oh-my-bash
-1. asdf
-1. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-1. make tpm
-1. nvim
-1. nvim :check
+2. sudo apt update && upgrade
+3. sudo apt install vim-gtk3
+4. brew
+5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
+6. oh-my-bash
+8. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+9. asdf
+10. make tpm
+11. nvim
+12. nvim :check
 
 ### Ubuntu
 1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
-2. brew
+2. sudo apt install vim-gtk3
+3. brew
+4. wezterm
+5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
+6. oh-my-bash
+7. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+8. asdf
+9. make tpm
+10. nvim
+11. nvim :check
 
 ### Manually Version Control
 
