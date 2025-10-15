@@ -29,8 +29,8 @@ return {
 			"graphql",
 			"postgres_lsp",
 			"jqls",
-			"rust_analyzer",
 			"tailwindcss",
+			"rust_analyzer",
 			"pyright",
 		}
 

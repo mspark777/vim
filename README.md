@@ -7,7 +7,7 @@ My nvim configure.
 ### macOS
 
 1. stats
-2. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld
+2. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld tree-sitter-cli
 3. asdf, tmux plugins
 4. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 5. cd ~/.config/nvim
@@ -20,27 +20,28 @@ My nvim configure.
 2. sudo apt update && upgrade
 3. sudo apt install vim-gtk3
 4. brew
-5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
-6. oh-my-bash
-8. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-9. asdf
-10. make tpm
-11. nvim
-12. nvim :check
-
-### Ubuntu
-1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
-2. sudo apt install vim-gtk3
-3. brew
-5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget
+5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget tree-sitter-cli
 6. oh-my-bash
 7. git clone git@github.com:mspark777/vim.git ~/.config/nvim
 8. asdf
-9. make tpm hack
-11. nvim
-12. nvim :check
-13. apt wezterm
-14. flathub tophat
+9. make tpm
+10. nvim
+11. nvim :check
+
+### Ubuntu
+
+1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
+2. sudo apt install vim-gtk3
+3. brew
+4. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget tree-sitter-cli
+5. oh-my-bash
+6. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+7. asdf
+8. make tpm hack
+9. nvim
+10. nvim :check
+11. apt wezterm
+12. flathub tophat
 
 ### Manually Version Control
 
@@ -75,6 +76,10 @@ git config --global pager.diff false
 git config --global init.defaultBranch main
 git config --global core.autocrlf false
 ```
+
+## LSP name
+
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 
 ## Update
 
