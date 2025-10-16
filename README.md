@@ -84,10 +84,11 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 ## Update
 
 1. sudo apt update && upgrade
-1. brew update & upgrade
-1. upgrade_oh_my_bash
-1. asdf plugin update --all
-1. make hack
-1. tmux prefix + U
-1. rustup update
-1. make cleanall & nvim
+2. sudo flatpak update
+3. brew update & upgrade
+4. upgrade_oh_my_bash
+5. asdf plugin update --all
+6. make hack
+7. tmux prefix + U
+8. rustup update
+9. make cleanall & nvim
