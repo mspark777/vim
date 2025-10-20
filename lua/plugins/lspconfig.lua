@@ -32,6 +32,7 @@ return {
 			"tailwindcss",
 			"rust_analyzer",
 			"pyright",
+			"terraformls",
 		}
 
 		for _, value in ipairs(lsp_list) do

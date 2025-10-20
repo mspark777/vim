@@ -26,6 +26,7 @@ return {
 				python = { "black" },
 				sql = { "sqlfmt" },
 				toml = { "taplo" },
+				terraform = { "terraform" },
 				["_"] = { "trim_whitespace" },
 			},
 			format_on_save = {

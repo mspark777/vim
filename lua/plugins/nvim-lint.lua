@@ -14,6 +14,8 @@ return {
 			typescriptreact = { "eslint" },
 			go = { "golangcilint" },
 			python = { "pylint" },
+			terraform = { "terraform" },
+			rust = { "clippy" },
 		}
 	end,
 }

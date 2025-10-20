@@ -102,6 +102,7 @@ if first_time then
 		"tailwindcss-language-server",
 		"rust-analyzer",
 		"pyright",
+		"terraform-ls",
 		-- Linter
 		"golangci-lint",
 		"pylint",
@@ -109,6 +110,7 @@ if first_time then
 		"stylua",
 		"black",
 		"sqlfmt",
+		"terraform",
 		-- DAP
 		"js-debug-adapter",
 		"codelldb",
