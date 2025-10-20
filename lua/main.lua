@@ -50,6 +50,13 @@ vim.cmd([[
 autocmd Filetype make setlocal noexpandtab
 ]])
 
+vim.filetype.add({
+	extension = {
+		tf = "terraform",
+		tfvars = "terraform",
+	},
+})
+
 vim.diagnostic.config({
 	virtual_text = false,
 })
