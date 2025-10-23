@@ -9,10 +9,6 @@ return {
 		"antosha417/nvim-lsp-file-operations",
 	},
 	config = function()
-		require("neoconf").setup({})
-
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-		local capabilities = cmp_nvim_lsp.default_capabilities()
 		local lsp_list = {
 			"lua_ls",
 			"ts_ls",
@@ -36,9 +32,6 @@ return {
 		}
 
 		for _, value in ipairs(lsp_list) do
-			vim.lsp.config(value, {
-				capabilities = capabilities,
-			})
 			vim.lsp.enable(value)
 		end
 	end,
