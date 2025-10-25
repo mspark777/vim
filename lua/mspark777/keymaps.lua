@@ -51,11 +51,6 @@ vim.keymap.set("n", "<leader>dC", dap.clear_breakpoints, { silent = true, norema
 vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint, { silent = true, noremap = true, desc = "Set breakpoint." })
 vim.keymap.set("n", "<leader>dr", dap.repl.open, { silent = true, noremap = true, desc = "Toggle debugger repl." })
 
--- nvim-tree
-vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
-vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
-vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
-
 -- conform
 local conform = require("conform")
 vim.keymap.set({ "n", "v" }, "<leader>mp", function()
