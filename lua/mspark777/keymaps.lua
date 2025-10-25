@@ -350,7 +350,7 @@ vim.keymap.set("n", "<leader>un", function()
 	Snacks.notifier.hide()
 end, { desc = "Dismiss All Notifications" })
 
-vim.keymap.set("n", "<c-/>", function()
+vim.keymap.set("n", "<a-/>", function()
 	Snacks.terminal()
 end, { desc = "Toggle Terminal" })
 
