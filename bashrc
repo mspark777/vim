@@ -19,6 +19,7 @@ fi
 #git fetch
 #git reset --mixed origin/main
 
+DISABLE_AUTO_UPDATE=true
 export OSH='/home/mspark777/.oh-my-bash'
 
 OSH_THEME="powerbash10k"
