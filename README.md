@@ -4,34 +4,10 @@ My nvim configure.
 
 ## Install
 
-### macOS
-
-1. stats
-2. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld tree-sitter-cli
-3. asdf, tmux plugins
-4. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-5. cd ~/.config/nvim
-6. nvim
-7. nvim :check
-
-### Ubuntu - WSL
-
-1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
-2. sudo apt update && upgrade
-3. sudo apt install vim-gtk3
-4. brew
-5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget tree-sitter-cli
-6. oh-my-bash
-7. git clone git@github.com:mspark777/vim.git ~/.config/nvim
-8. asdf
-9. make tpm
-10. nvim
-11. nvim :check
-
 ### Ubuntu
 
 1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
-2. sudo apt install vim-gtk3
+2. sudo apt install vim-gtk3 musl-tools build-essential
 3. brew
 4. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget tree-sitter-cli
 5. oh-my-bash
@@ -42,6 +18,30 @@ My nvim configure.
 10. nvim :check
 11. apt wezterm
 12. flathub tophat
+
+### Ubuntu - WSL
+
+1. visudo ALL=(ALL:ALL) NOPASSWDL:ALL
+2. sudo apt update && upgrade
+3. sudo apt install vim-gtk3 musl-tools build-essential
+4. brew
+5. brew install make xclip ack fzf ripgrep jq tidy-html5 fd bat zstd tree-sitter lazygit neovim awscli tmux cargo-binstall asdf llvm lazydocker lld openssh less net-tools wget tree-sitter-cli
+6. oh-my-bash
+7. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+8. asdf
+9. make tpm
+10. nvim
+11. nvim :check
+
+### macOS (WARN: too old)
+
+1. stats
+2. brew git fzf ripgrep jq tidy-html5 fd bat ack wget tmux zstd nerdfonts tree-sitter lazygit neovim awscli wezterm bash cargo-binstall asdf llvm lazydocker lld tree-sitter-cli
+3. asdf, tmux plugins
+4. git clone git@github.com:mspark777/vim.git ~/.config/nvim
+5. cd ~/.config/nvim
+6. nvim
+7. nvim :check
 
 ### Manually Version Control
 
