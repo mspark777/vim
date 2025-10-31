@@ -13,7 +13,7 @@ local mason_packages = {
 	"dockerfile-language-server",
 	"taplo",
 	"graphql-language-service-cli",
-	"postgrestools",
+	"postgres-language-server",
 	"jq-lsp",
 	"tailwindcss-language-server",
 	"rust-analyzer",
